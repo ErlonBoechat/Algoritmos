@@ -1,0 +1,36 @@
+include <iostream>
+#include <locale>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+int idade; 
+cout<<"Sua idade: ";
+cin>>(idade);
+while(idade!=0 && idade!=100)
+{
+	if(idade>=7 && idade<=12)
+	{
+	    cout<<"Sua categoria é: Infantil";
+	}
+	else if(idade>=13 && idade<=17)
+	{
+	    cout<<"Sua categoria é: Juvenil";
+	}
+	else if(idade>=18 && idade<=49)
+	{
+	    cout<<"Sua categoria é: Adulto";
+	}
+	else if(idade>=50 && idade<=70)
+	{
+	    cout<<"Sua categoria é: Senior";
+	}
+	else if(idade<7 || idade>70)
+	{
+	    cout<<"Fora da idade permitida.";
+	}
+	cout<< "\n\nSua idade: ";
+	cin>>idade;
+}
+cout<<"\nFim";
+}
