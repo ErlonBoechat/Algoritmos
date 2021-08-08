@@ -21,7 +21,7 @@ while(positivo>=0 || negativo>=0)
 if(sentimento=='p' || sentimento=='P')
 {
 	//positivo++;
-	positivo+=1;
+	positivo=+1;
 	cout<<"\n\n";
 	cout<<"POSITIVO"; positivo;
 }
