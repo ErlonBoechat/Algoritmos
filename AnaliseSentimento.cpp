@@ -12,27 +12,40 @@ char sentimento;
 	cout<<"\nPositivas = p"; 
 	cout<<"\nNegativas = n";
 	cout<<"\nNeutras = e";
-cout<<"\nInsira o sentimento: ";
-cin>>sentimento;
+	cout<<"\n";
+	cout<<"\nInsira o sentimento: ";
+    cin>>sentimento;
 while(positivo>=0 || negativo>=0)
 {
 //if(sentimento='p' || sentimento='n'|| sentimento='e')
-if(sentimento='p')
+if(sentimento=='p' || sentimento=='P')
 {
-	positivo++;
-	cout<<"positivo";
+	//positivo++;
+	positivo+=1;
+	cout<<"\n\n";
+	cout<<"POSITIVO"; positivo;
 }
-else if(sentimento='n')
+else if(sentimento=='n'|| sentimento=='N')
 {
-	negativo++;
-	cout<<"negativo";
+	//negativo++;
+	negativo=+1;
+	cout<<"\n\n";
+	cout<<"NEGATIVO";
 }
-else if (sentimento='e')
+else if (sentimento=='e'||sentimento=='E')
 {
-	neutro++;
-	cout<<"neutro";
+	//neutro++;
+	neutro=+1;
+	cout<<"\n\n";
+	cout<<"NEUTRO";
 }
+cout<<"\n";
 cout<<"\nInsira o sentimento: ";
 cin>>sentimento;
+cout<<"\nPositivas: ", positivo;
+cout<<"\nNegativas: ", negativo;
+cout<<"\nNeutras: ", neutro;
+
 }
+
 }
