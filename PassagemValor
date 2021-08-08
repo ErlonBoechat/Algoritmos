@@ -1,0 +1,29 @@
+#include <iostream>
+#include <locale>
+using namespace std;
+
+//Construa uma função que receba valores que correspondem ao
+//caracter e à quantidade de vezes que se desaja exibí-lo
+
+void linha (char c, int n);
+int main()
+{
+ 
+    cout<<"\nEstabelecimento\n";
+    linha('=',50);
+    
+    cout<<"\nNome:\n";
+    linha('=',50);
+    
+    cout<<"\nTel:\n";
+    linha('=',50);
+    
+    cout<<"\nEmail:\n";
+    linha('=',50);
+    
+}
+void linha (char c, int n)
+{
+for(int x=1;x<=n;x++)
+cout<<c;
+} 
