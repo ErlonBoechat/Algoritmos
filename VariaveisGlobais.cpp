@@ -19,7 +19,7 @@ int main()
   dobra();
   cout<<"\nDados a chamada de dobra (): "<<num1<<", "<<num2;
   cout<<"\n\n";
-  system("pause");
+  //system("pause");
   return 0;
 }
 void troca()
