@@ -24,7 +24,7 @@ int main()
 }
 void troca()
 {
-  // dobra(); embora a chamada da função tenha rodado, está com erro de lógica
+  dobra(); //  Quando a função 'dobra' é chamada pela função main(), ela já encontra os valores dobrados e, então, os dobra novamente
   num1+=num2;
   num2=num1-num2;
   num1=num1-num2;
