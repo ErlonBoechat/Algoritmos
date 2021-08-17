@@ -12,8 +12,8 @@ if(num==13)
 {
 cout<<"\nVc votou no Lula";
 cout<<"\n********************";
-lula+=1;
-cont+=1;
+lula+=10;
+cont+=10;
 }
 else if(num==39)
 {
