@@ -52,7 +52,7 @@ cout<<"\nBozo: "<<bozo;
 cout<<"\nBrancos: "<<brancos;
 cout<<"\nNulos: "<<nulos<<"\n";
 barra();
-cout<<"TOTAL DE VOTOS: "<<cont;
+cout<<"TOTAL: "<<cont<<"\n";
 cout<<"\n";
 
 system("pause");
@@ -70,6 +70,7 @@ void barra()
 	}
 	cout<<"\n";
 }
+
 void menu()
 {
 	cout<<"\n13 - Lula";
