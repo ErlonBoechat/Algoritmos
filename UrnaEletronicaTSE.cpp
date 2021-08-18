@@ -57,4 +57,9 @@ cout<<"\nLula: "<<lula;
 cout<<"\nBozo: "<<bozo;
 cout<<"\nBrancos: "<<brancos;
 cout<<"\nNulos: "<<nulos;
+cout<<"\n";
+
+system("pause");
+return 0;        
+	
 }
