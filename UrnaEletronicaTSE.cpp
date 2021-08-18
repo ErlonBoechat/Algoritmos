@@ -1,16 +1,10 @@
 #include <iostream> 
 #include <locale> 
 using namespace std; 
-void menu()
-{
-	cout<<"\n13 - Lula";
-	cout<<"\n39 - Bozo";
-	cout<<"\n1 - Branco";
-	cout<<"\n2 - Nulo";
-	cout<<"\n";
-	cout<<"\n***********";
-	cout<<"\n";
-}
+
+void barra();
+void menu();
+
 int main() {
 setlocale(LC_ALL, "ptb");
 
@@ -52,14 +46,35 @@ cont+=1;
 cout<<"\nDigite o número do seu candidato: ";
 cin>>num;
 }
-cout<<"\n";
+barra();
 cout<<"\nLula: "<<lula;
 cout<<"\nBozo: "<<bozo;
 cout<<"\nBrancos: "<<brancos;
-cout<<"\nNulos: "<<nulos;
+cout<<"\nNulos: "<<nulos<<"\n";
 cout<<"\n";
 
 system("pause");
 return 0;        
 	
+}
+void barra()
+{
+	int num;
+	cout<<"\n";
+	cout<<"\n";
+	for(num=0; num<=10; num++)
+	{
+		cout<<"*";
+	}
+	cout<<"\n";
+}
+void menu()
+{
+	cout<<"\n13 - Lula";
+	cout<<"\n39 - Bozo";
+	cout<<"\n1 - Branco";
+	cout<<"\n2 - Nulo";
+	cout<<"\n";
+	cout<<"\n***********";
+	cout<<"\n";
 }
