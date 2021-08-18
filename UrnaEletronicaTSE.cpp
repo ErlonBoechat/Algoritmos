@@ -51,6 +51,8 @@ cout<<"\nLula: "<<lula;
 cout<<"\nBozo: "<<bozo;
 cout<<"\nBrancos: "<<brancos;
 cout<<"\nNulos: "<<nulos<<"\n";
+barra();
+cout<<"TOTAL DE VOTOS: "<<cont;
 cout<<"\n";
 
 system("pause");
