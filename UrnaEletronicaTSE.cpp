@@ -2,6 +2,7 @@
 using namespace std; 
 
 int main() {
+setlocale(LC_ALL, "ptb");
 int cont, num, lula=0, bozo=0, brancos=0, nulos=0;
 
 cout<<"Digite o número do seu candidato: ";
