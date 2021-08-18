@@ -17,14 +17,14 @@ while(num!=0)
 {
 if(num==13)
 {
-cout<<"\nVc votou no LULA";
+cout<<"\nVc votou no LULA - PT";
 cout<<"\n";
 lula+=1;
 cont+=1;
 }
 else if(num==39)
 {
-cout<<"\nVc votou no BOZO";
+cout<<"\nVc votou no BOZO - PP";
 cout<<"\n";
 bozo+=1;
 cont+=1;
@@ -73,10 +73,10 @@ void barra()
 
 void menu()
 {
-	cout<<"\n13 - Lula";
-	cout<<"\n39 - Bozo";
-	cout<<"\n1 - Branco";
-	cout<<"\n2 - Nulo";
+	cout<<"\n13 - Lula (PT)";
+	cout<<"\n39 - Bozo (PP)";
+	cout<<"\n 1 - Branco";
+	cout<<"\n 2 - Nulo";
 	cout<<"\n";
 	cout<<"\n***********";
 	cout<<"\n";
