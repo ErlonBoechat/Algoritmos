@@ -26,6 +26,6 @@ double media (double n[], int tam)
 
   double soma=0;
   for (int x=0; x<tam; x++)
-  soma+-n[x];
+  soma+=n[x];
   return soma/tam;
 }
