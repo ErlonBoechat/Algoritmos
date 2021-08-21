@@ -1,4 +1,11 @@
-#include <iostream> // resolver
+// Construa uma função que receba o endereço de um vetor que
+// armazena alturas de um grupo de atletas, seu tamanho e a 
+// altura mínima de corte, retornando a quantidade de atletas 
+// com a altura superior ou igual ao corte.
+
+// resolver algoritmo
+
+#include <iostream>
 using namespace std;
 
 double contaMaioresQueH (double alts[], int tam, double altP);
