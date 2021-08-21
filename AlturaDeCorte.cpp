@@ -16,14 +16,12 @@ double corte;
 double altura[num];
 cout<<"\nQtde de registros: ";
 cin>>num;
-cout<<"\n\n";
 cout<<"\nAltura de corte: ";
 cin>>corte;
-cout<<"\n\n";
 for(int x=0; x<num; x++)
     {
       cout<<"\nAltura "<<x+1<<": ";
-      cin>>altura[x];
+      cin>>altura[num];
     }
 cout<<"\n\n";
 for(int x=0; x<num; x++)
