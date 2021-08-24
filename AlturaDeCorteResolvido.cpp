@@ -19,20 +19,20 @@ cout<<"\nRelação das Alturas\n";
 for(int x=0; x<4; x++)
   {
      cout<<alturas[x]<<"\t";
-     contaMaioresQueH(alturas, 4, procuraAltura);
-     cout<<"\n\nTotal das alturas maiores que 6: "<<contaMaioresQueH(alturas, 4, procuraAltura);
-     cout<<"\n\n";
   }
-
+contaMaioresQueH(alturas, 4, procuraAltura);
+     cout<<"\n\nTotal das alturas maiores que a mínima: "<<contaMaioresQueH(alturas, 4, procuraAltura);
+     cout<<"\n\n";
+     
 system("pause");
-retur 0;
+return 0;
 
 }
 
 int contaMaioresQueH(double alts[], int tam, double altP)
 {
-  int conta=0
-   for(int x=0, t<tam; x++)
+  int conta=0;
+   for(int x=0; x<tam; x++)
      {
         if (alts[x]>=altP)
         conta++;
