@@ -12,12 +12,11 @@ void arredonda(double a[], int tam);
 
 int main () {
     
-    int tamTurma;
-      double notas[] {1.1,2.2,3.3,4.4,5.5};
-   // double notas[50];
+    int tamTurma=5;
+    double notas[] {1.1,2.2,3.3,4.4,5.5};
     
-    cout<<"\nTamanho da turma: ";
-    cin>>tamTurma;
+       cout<<"\nTamanho da turma: ";
+       cin>>tamTurma;
     
     cout<<endl;
     
@@ -26,17 +25,17 @@ int main () {
         cout<<"\nDigite a "<<x+1<<"ª nota: ";
         cin>>notas[x];
     }
-
-   cout<<endl;
-
+   
+    cout<<endl;
+    
     arredonda(notas, tamTurma);
     
     for(int x=0;x<tamTurma;x++)
     {
         cout<<"\n\n"<<x+1<<"ª nota: "<<notas[x];
     }
-  
-  return 0;
+    
+    return 0;
 }
 
 void arredonda(double a[], int tam)
