@@ -14,6 +14,7 @@ int main () {
     
     int tamTurma=5;
     double notas[] {1.1,2.2,3.3,4.4,5.5};
+  //double notas[50];
     
        cout<<"\nTamanho da turma: ";
        cin>>tamTurma;
