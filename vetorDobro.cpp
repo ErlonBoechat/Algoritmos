@@ -1,3 +1,8 @@
+//Constua uma função que receba endereços de dois vetores
+//e o tamanho deles. A função deverá gerar o vetor dobro
+
+//Ajustar
+
 #include <iostream>
 #include <locale>
 using namespace std;
