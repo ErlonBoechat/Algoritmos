@@ -6,8 +6,8 @@ void dobro(double v1[], double v2[], int tam);
 
 int main() {
 
-double vetorUm[50], vetorDois[50];
-int num;
+double vetorUm[5]{11,12,13,14,15}, vetorDois[5]{16,17,18,19,20};
+int num=5;
 
 cout<<"\nDigite o tamanho dos vetores: ";
 cin>>num;
