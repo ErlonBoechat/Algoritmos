@@ -21,7 +21,7 @@ cout<<"\n\n*********************\n";
 
 for(int x=0; x<num; x++)
 {
-cout<<x+1<<"º valor do Vetor 1: ";
+cout<<"\n"<<x+1<<"º valor do Vetor 1: ";
 cin>>vetorUm[x];
 }
 
@@ -29,7 +29,7 @@ cout<<"\n\n*********************\n";
 
 for(int x=0; x<num; x++)
 {
-cout<<x+1<<"º valor do Vetor 2: ";
+cout<<"\n"<<x+1<<"º valor do Vetor 2: ";
 cin>>vetorDois[x];
 }
 
@@ -40,14 +40,14 @@ cout<<"\n\n*********************\n";
 
 for(int x=0; x<num; x++)
 {
-cout<<x+1<<"º valor do Vetor 1: "<<vetorUm[x]<<endl;
+cout<<"\n"<<x+1<<"º valor do Vetor 1: "<<vetorUm[x]<<endl;
 }
 
 cout<<"\n\n*********************\n";
 
 for(int x=0; x<num; x++)
 {
-cout<<x+1<<"º valor do Vetor 2: "<<vetorDois[x]<<endl;
+cout<<"\n"<<x+1<<"º valor do Vetor 2: "<<vetorDois[x]<<endl;
 
 }
 
