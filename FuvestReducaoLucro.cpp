@@ -1,5 +1,5 @@
 //(FUVEST-SP 2020) A dona de uma lanchonete observou que, vendendo um combo a R$10,00,
-//200 deles são vendidos por dia e que, para cada redição de R$1 nesse preço, ela vende 100
+//200 deles são vendidos por dia e que, para cada redução de R$1 nesse preço, ela vende 100
 //combos a mais. Nessas condições, qual é a máxima arrecadação diária que ela espera obter com
 //a venda desse combo? 
 
