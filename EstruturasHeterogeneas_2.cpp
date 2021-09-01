@@ -10,7 +10,7 @@ int main()
     float valor;
   }produto1={"martelo",35.01}, produto2={"furadeira",256.75}, aux;
   
- // if(strcmp(produto1.nomeProd,produto2.nomeProd>0))
+ // if(strcmp(produto1.nomeProd,produto2.nomeProd>0)) // a expressão ">0" retorna o erro: cannot convert 'bool' to 'const char*' 
  // {
    aux=produto1; produto1=produto2; produto2=aux;
 //  }  
