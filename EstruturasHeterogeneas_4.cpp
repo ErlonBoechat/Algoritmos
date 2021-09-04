@@ -29,13 +29,15 @@ int main()
         cout<<"\nDigite o telefone: "; cin.getline(paciente2.telefone,25);        
  
     system("cls");
+    cout<<"\n--------------------------------------------------------\n";
     cout<<"\nNome do 1º paciente: "<<paciente1.nomePaciente;
     cout<<"\nPeso\tAltura\tIMC\tClassificação";
     cout<<"\n"<<paciente1.peso<<"\t"<<paciente1.altura<<"\t"<<paciente1.imc<<"\t"<<paciente1.classificacao;
-
+    cout<<"\n--------------------------------------------------------\n";
     cout<<"\nNome do 2º paciente: "<<paciente2.nomePaciente;
     cout<<"\nPeso\tAltura\tIMC\tClassificação";
     cout<<"\n"<<paciente2.peso<<"\t"<<paciente2.altura<<"\t"<<paciente2.imc<<"\t"<<paciente2.classificacao;
+    cout<<"\n--------------------------------------------------------\n";
 
 cout<<"\n\n";
 system("pause");    
