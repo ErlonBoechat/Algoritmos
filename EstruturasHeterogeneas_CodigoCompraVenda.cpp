@@ -27,10 +27,15 @@ int main()
     produtos[x].precoVenda=produtos[x].precoCompra *1.6;
     
   }
-  system("cls");
-  cout<<"\n\nCodigo\tCompra\tVenda\n";  
-  for(x=0; x<TAM; x++)
-  cout<<"\n"<<produtos[x].codigo<<"\t"<<produtos[x].precoCompra<<"\t"<<produtos[x].precoVenda;
   cout<<"\n\n";
+  system("cls");
+  cout<<"\n\n";
+  cout<<"\n+++++++++++++++++++++++++++++++++++++++++++++++++";
+  cout<<"\n+++++++++++++++++++++++++++++++++++++++++++++++++";
+  cout<<"\n\nCodigo\t| Compra\t| Venda\n";  
+  for(x=0; x<TAM; x++)
+  cout<<"\n"<<produtos[x].codigo<<"\t| "<<produtos[x].precoCompra<<"\t| "<<produtos[x].precoVenda;
+  cout<<"\n\n";
+  cout<<"\n+++++++++++++++++++++++++++++++++++++++++++++++++";
   system("pause");
 }
