@@ -13,17 +13,18 @@ int main()
   int x, num;
   for(x=0; x<TAM; x++)     
   {
-    cout<<"\nCódigo do Produto 0-10000: ";
+    cout<<"\nCódigo do Produto (0 a 1.000): ";
     cin>>num;
     while(num<0 || num>10000)
     {
       cout<<"\nCodigo invalido";
-      cout<<"\nCódigo do Produto 0-10000: ";
+      cout<<"\nCódigo do Produto (0 a 1.000): ";
       cin>>num;
     }
     produtos[x].codigo=num;
     cout<<"\nPreco de compra: ";    
     cin>>produtos[x].precoCompra;
+    cout<<"\n-------------------------------------------------";
     produtos[x].precoVenda=produtos[x].precoCompra *1.6;
     
   }
