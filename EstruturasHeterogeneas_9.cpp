@@ -11,10 +11,14 @@ int main ()
   int x,y;
   for(x=0;x<2;x++)
   {
+   
     cout<<"\nPalavra: ";
     cin.getline(palavra[x].pal,21); 
-  }
-  palavra[0].pal[0]=toupper(palavra[0].pal[0]); //converte 1º caractere em maiúsculo
+    }
+ 
+ palavra[0].pal[0]=toupper(palavra[0].pal[0]);
+ palavra[1].pal[0]=toupper(palavra[1].pal[0]);
+  
   system("cls");
   for(x=0;x<2;x++)
   {
