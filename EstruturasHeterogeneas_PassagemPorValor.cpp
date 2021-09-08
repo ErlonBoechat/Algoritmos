@@ -10,7 +10,7 @@ float maior2(float n1, float n2);
 
 int main()
 {
-  cad numeros={23,69,13,62};
+  cad numeros={23,69,106,95};
   cout<<"\nNumeros da estrutura";
   cout<<"\n"<<numeros.a<<"\t"<<numeros.b<<"\t"<<numeros.c<<"\t"<<numeros.d;
   cout<<"\n------------------------------------------";
@@ -24,12 +24,7 @@ int main()
 
 float maior2(float n1, float n2)
 {
-  if(n1>n2)
-  {
-  return n1;
-  }
-  else 
-  {
-  return n2;
-  }
+  if(n1>n2)return n1;
+  else return n2;
+ 
 }
