@@ -15,14 +15,15 @@ int main ()
   }promissorias[2];
      
   int x;
+    cout<<"\n===============================";
   for(x=0;x<2;x++)
   {
-    cout<<"\nCodigo: ";
+    cout<<"\nCodigo da promissoria: ";
     cin>>promissorias[x].codigo;
    
     cout<<"\nValor a ser pago: ";
     cin>>promissorias[x].valor;
-    cout<<"\n...............................";
+    cout<<"\n...............................\n";
     cout<<"\nDigite dia: ";
     cin>>promissorias[x].venc.dia;
 
