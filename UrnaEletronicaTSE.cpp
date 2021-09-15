@@ -18,6 +18,7 @@ while(num!=0)
 if(num==13)
 {
 cout<<"\nVc votou no LULA - PT";
+cout<<"\n--------------------------------FIM";
 cout<<"\n";
 lula+=1;
 cont+=1;
@@ -25,6 +26,7 @@ cont+=1;
 else if(num==39)
 {
 cout<<"\nVc votou no BOZO - PP";
+cout<<"\n--------------------------------FIM";
 cout<<"\n";
 bozo+=1;
 cont+=1;
@@ -32,6 +34,7 @@ cont+=1;
 else if (num==1)
 {
 cout<<"\nVc votou em BRANCO";
+cout<<"\n--------------------------------FIM";
 cout<<"\n";
 brancos+=1;
 cont+=1;
@@ -39,6 +42,7 @@ cont+=1;
 else
 {
 cout<<"\nVc votou NULO";
+cout<<"\n--------------------------------FIM";
 cout<<"\n";
 nulos+=1;
 cont+=1;
