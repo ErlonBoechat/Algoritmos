@@ -7,9 +7,8 @@ int main()
     {
     cout<<"\nWrite a character: ";
     cin>>x;
-    cout << "\nThe ASCII value of the character "<< x <<" is: " << int(x);
+    cout << "\nThe ASCII value of the character '"<< x <<"' is: " << int(x);
     cout<<"\n----------------------------------------------";
-    
     }
     return 0;
 }
