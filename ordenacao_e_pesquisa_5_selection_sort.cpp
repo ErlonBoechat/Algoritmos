@@ -35,6 +35,7 @@ void selecao(int vet[], int tam)
     aux=i;
     for(j=i+1;j<tam;j++)
     {
+    aux=i;
       if(vet[aux]>vet[j])
         aux=j;
         temp=vet[aux];
