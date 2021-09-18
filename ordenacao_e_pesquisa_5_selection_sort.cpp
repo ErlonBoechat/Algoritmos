@@ -15,7 +15,7 @@ for(x=0;x<5;x++)
 
 cout<<"\n";
 
-selecao(vet,5);
+selecao(vet,x);
 
 cout<<"\nDepois da chamada: ";
 
