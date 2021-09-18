@@ -29,14 +29,18 @@ return(0);
 
 void selecao(int vet[], int tam)
 {
-  int j, i, aux, temp;
+  int i,j, aux, temp;
+  
   for(i=0;i<tam-1;i++)
   {
     aux=i;
+    
     for(j=i+1;j<tam;j++)
     {
-    aux=i;
+      aux=i;
+    
       if(vet[aux]>vet[j])
+      
         aux=j;
         temp=vet[aux];
         vet[aux]=vet[i];
