@@ -5,22 +5,22 @@ void selecao(int vet[], int tam);
 
 int main () {
 
-int x, vet[]={13,23,3,8,1};
+int x, vet[]={155,76,23,9,12};
 system("cls");
 
 cout<<"Antes da chamada: ";
 
 for(x=0;x<5;x++)
-  cout<<vet[x]<<"\t";
+  cout<<"\t"<<vet[x]<<"\t";
 
 cout<<"\n";
 
-selecao(vet,x);
+selecao(vet,5);
 
 cout<<"\nDepois da chamada: ";
 
 for(x=0;x<5;x++)
-  cout<<vet[x]<<"\t";
+  cout<<"\t"<<vet[x]<<"\t";
 
 system("pause");
 return(0);
@@ -29,18 +29,13 @@ return(0);
 
 void selecao(int vet[], int tam)
 {
-  int i,j, aux, temp;
-  
+  int j, i, aux, temp;
   for(i=0;i<tam-1;i++)
   {
-    aux=i;
-    
     for(j=i+1;j<tam;j++)
     {
       aux=i;
-    
       if(vet[aux]>vet[j])
-      
         aux=j;
         temp=vet[aux];
         vet[aux]=vet[i];
