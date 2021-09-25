@@ -1,7 +1,7 @@
 #include<iostream>
 #define tam 5
 using namespace std;
-void barra();
+void bar();
 int main()
 {
   int L,op,matProcura,pos,achou,matric[]={2,4,5,6,13};
@@ -10,23 +10,23 @@ int main()
   do
   {
     system("cls");
-    barra();
+    bar();
     cout<<"\n1 - Lista";
     cout<<"\n2 - Procura";
     cout<<"\n3 - Sai\n";
-    barra();
+    bar();
     cout<<"\nOpcao: ";
     cin>>op;
 
     switch(op)
     {
       case 1:
-        barra();
+        bar();
         cout<<"\nMatriculas\n";
         for(L=0;L<tam;L++)
           cout<<"\n"<<L+1<<" - "<<matric[L];
           cout<<"\n";
-          barra();
+          bar();
       break;
       
       case 2: cout<<"\nQual matricula a ser procurada? \n";    
@@ -55,7 +55,7 @@ int main()
   }while(op!=3);
 }
 
-void barra()
+void bar()
 {
     cout<<"------------";
 }
