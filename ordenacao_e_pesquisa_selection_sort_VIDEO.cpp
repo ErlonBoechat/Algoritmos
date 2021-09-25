@@ -64,5 +64,5 @@ void imprimirVetor(int vet[],int tam){
 }
 void bar()
 {
-    cout<<"------------";
+    cout<<"----------------";
 }
