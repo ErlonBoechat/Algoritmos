@@ -18,7 +18,7 @@ setlocale(LC_ALL, "Portuguese");
   imprimirVetor(vetor,5);
   bar();
   //=======================
-  //selection sort
+  //insertion sort
   //=======================
   insertionSort(vetor,5);
   //=======================
