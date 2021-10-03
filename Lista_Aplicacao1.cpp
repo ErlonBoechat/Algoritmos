@@ -23,6 +23,7 @@ int main()
        cout<<"\n3 - Exibe tamanho da Lista";
        cout<<"\n4 - Exibe um elemento da Lista";
        cout<<"\n5 - Sair";
+       cout<<"\n";
        cout<<"\nOpcao: ";
        cin>>op;
        //system("cls");
