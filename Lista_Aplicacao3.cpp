@@ -10,19 +10,20 @@ void frequencias(int IDS[], int t);
 {
   int tam, op, f3=0, idades[10], id;
 
-  //Inicialização
+  //InicializaÃ§Ã£o
     tam = 0;
 
  do
 {
   system("cls");
-  cout<<"\nMenu 2 - LISTA \n";
-  cout<<"\n0- Reinicar a LISTA";    
+  cout<<"\n === LISTA ===\n";
+  cout<<"\n0- Reinicar a lista";    
   cout<<"\n1- Inserir idade na lista";
   cout<<"\n2- Exibir lista";
   cout<<"\n3- Ordenar lista";
   cout<<"\n4- Exibe frequencia";
   cout<<"\n5- Sair";
+  cout<<"\n";
   cout<<"\nOpcao: ";
   cin>>op;
 
@@ -30,24 +31,27 @@ void frequencias(int IDS[], int t);
 
   switch(op)
   {
-   case 0:  //reinicialiação
+   case 0:  //reinicialiaÃ§Ã£o
             tam = 0;  
  break;   
    
    case 1:
-         cout << "\nDigite idade(10-19) a ser inserida na Lista: ";
+   	  
+   	     cout <<"+-------------------------------------------------------+\n";  
+		       cout <<"+  Digite idade(10-19) a ser inserida na Lista:         +\n";
+         cout <<"+-------------------------------------------------------+\n";
          cin >> id;
-         
+          
          while(id<10 || id >19)
          {
            cout<<"\nAtencao para o intervalo.";
            cout<<"Digite idade(10-19) a ser inserida na Lista: ";
            cin>>id;
          }  
-
-         insere(idades,id,tam, 10);
-         break;
-
+         
+         insere(idades,id,tam, 10);        
+		 break;
+        
    case 2: exibe(idades,tam);
            break;
            
@@ -142,9 +146,9 @@ void frequencias(int IDS[], int t)
   {  
     for(i=0;i<t;i++)
     {  frequencia[IDS[i]-10]++;
-       cout<<"\n"<<IDS[i]<<"\t"<< frequencia[IDS[i]-10]; //SÓ PARA FINS DIDÁTICOS
+       cout<<"\n"<<IDS[i]<<"\t"<< frequencia[IDS[i]-10]; //SÃ“ PARA FINS DIDÃTICOS
     }
-    // exibe frequência dos números sem repetição
+    // exibe frequÃªncia dos nÃºmeros sem repetiÃ§Ã£o
     cout<<"\n\nIdade\tFrequencia\n";
    cout<<"\n"<<IDS[0]<<"\t"<< frequencia[IDS[0]-10];
 
