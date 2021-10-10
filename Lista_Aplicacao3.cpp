@@ -33,12 +33,12 @@ void frequencias(int IDS[], int t);
   {
    case 0:  //reinicialiaÃ§Ã£o
             tam = 0;  
- break;   
+   break;   
    
    case 1:
    	  
-   	     cout <<"+-------------------------------------------------------+\n";  
-		       cout <<"+  Digite idade(10-19) a ser inserida na Lista:         +\n";
+   	 cout <<"+-------------------------------------------------------+\n";  
+         cout <<"+  Digite idade(10-19) a ser inserida na Lista:         +\n";
          cout <<"+-------------------------------------------------------+\n";
          cin >> id;
           
