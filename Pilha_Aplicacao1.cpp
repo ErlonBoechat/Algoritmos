@@ -6,6 +6,8 @@ void empilha(int p[], int &t, int v);
 int desempilha(int[], int &t, int &v);
 void acessoTopo(int p[], int &t);
 void situacaoPilha(int p[], int &t);
+void imprimirPilha(int p[], int t, int v);
+
 
 int main()
 {
@@ -15,13 +17,14 @@ int main()
    {
       system("cls");
       //system("color b9");
-      system("color 46");
+      system("color 47");
       cout<<"\nPilha (LIFO - Last In - First Out)\n\n";
       cout<<"\n1 - Inserir um valor na pilha";
       cout<<"\n2 - Remover um valor da pilha";
       cout<<"\n3 - Mostrar o elemento do topo da pilha";
       cout<<"\n4 - Mostrar situacao da pilha";
-      cout<<"\n5 - Sai";
+      cout<<"\n5 - Imprimir pilha";
+      cout<<"\n6 - Sai";
       cout<<"\n\nOpcao: ";
       cin>>op;
       system("cls");
@@ -41,13 +44,16 @@ int main()
                      cout<<"\nValor removido: "<<val;
                   break; 
 		
-		    case 3: acessoTopo(pilha,topo);
+		  case 3: acessoTopo(pilha,topo);
                   break;
  
           case 4: situacaoPilha(pilha,topo);
                   break;
- 
-          case 5: cout<<"\nPrograma basico de Pilha";                       
+          
+          case 5: imprimirPilha(pilha,topo,val);                      
+                  break;
+          
+          case 6: cout<<"\nPrograma basico de Pilha";                       
                   break;
                   
           default: cout<<"\nOpção Invalida!";
@@ -104,3 +110,11 @@ void situacaoPilha(int p[], int &t)
       cout<<"\n\nEspaco disponivel na pilha:"<<TAM-(t+1)<<"\n";
    }
 }     
+
+void imprimirPilha(int p[], int t, int v)
+{
+    int x;
+    for(x=0;x<t;x++)
+    cout<<p[v]<<"\n";
+    t++;
+}
