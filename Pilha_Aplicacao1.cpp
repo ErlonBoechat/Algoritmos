@@ -39,14 +39,24 @@ int main()
                      cout<<"\nAtencao! Lista vazia."; 
                   else
                      cout<<"\nVAlor removido: "<<val;
-                  break;                         
+                  break; 
+		
+		    case 3: acessoTopo(pilha,topo);
+                  break;
+ 
+          case 4: situacaoPilha(pilha,topo);
+                  break;
+ 
+          case 5: cout<<"\nPrograma basico de Pilha";                       
+                  break;
+                  
+          default: cout<<"\nOpção Invalida!";
       }
+      cout<<"\n\n"; system("pause"); 
 
-   }while(val!=-2);
-
-
+   }while(op!=5);		                          
 }
-
+//insere
 void empilha(int p[], int &t, int v)
 {
    if(t==TAM-1)
@@ -58,7 +68,7 @@ void empilha(int p[], int &t, int v)
       }
 }
 
-
+//remove
 int desempilha(int[], int &t, int &v)
 {
    int p[t];
@@ -72,7 +82,7 @@ int desempilha(int[], int &t, int &v)
       return 1;
    } 
 }
-
+//mostra o topo
 void acessoTopo(int p[], int &t)
 {
    if(t==-1)
@@ -80,7 +90,7 @@ void acessoTopo(int p[], int &t)
    else
       cout<<"\nElemento do topo da pilha: "<<p[t];
 }
-
+//mostra a situacao da pilha
 void situacaoPilha(int p[], int &t)
 {
    
