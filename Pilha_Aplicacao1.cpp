@@ -38,7 +38,7 @@ int main()
                   if(resp==0)
                      cout<<"\nAtencao! Lista vazia."; 
                   else
-                     cout<<"\nVAlor removido: "<<val;
+                     cout<<"\nValor removido: "<<val;
                   break; 
 		
 		    case 3: acessoTopo(pilha,topo);
