@@ -1,3 +1,4 @@
+//erro loop infinito
 #include<iostream>
 #define TAM 40
 using namespace std;
