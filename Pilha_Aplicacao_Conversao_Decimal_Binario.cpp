@@ -40,7 +40,7 @@ int main()
        while(sinal==1)
        {
           cout<<resto;
-          sinal-desempilha(pilha,topo,resto);   
+          sinal=desempilha(pilha,topo,resto);   
        } //fim do trecho de desempilhamento
        topo=-1;
        cout<<"\n\nDigite numero positivo 2.147.483.520. Qualquer outro, sai: ";
