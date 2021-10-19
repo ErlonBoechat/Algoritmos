@@ -37,14 +37,14 @@ int main()
 	           a=pop(p,t);
 	           b=pop(p,t);
 	           cout<<"\n"<<b-a<<"\n";
-	           push(p,t,b-a);
+	           push(p,t,a-b);
 	           break;
 	 case '*':
 	           a=pop(p,t);
 	           b=pop(p,t);
-	           cout<<"\n"<<b-a<<"\n";
-	           push(p,t,b*a);
-	           break;	   
+	           cout<<"\n"<<a*b<<"\n";
+	           push(p,t,a*b);
+	           break;
 	  case '/':
 	           a=pop(p,t);
 			   b=pop(p,t);
