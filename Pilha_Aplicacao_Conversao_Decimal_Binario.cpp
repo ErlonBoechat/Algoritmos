@@ -1,10 +1,10 @@
-//erro loop infinito
 #include<iostream>
 #define TAM 40
 using namespace std;
 
 void empilha(int p[], int &t, int v);
 int desempilha(int p[], int &t, int &v);
+void barra();
 
 int main()
 {
@@ -17,7 +17,7 @@ int main()
    cout<<"\n### Converte Numero da base decimal para base binaria    ###";
    cout<<"\n###                                                      ###";
    cout<<"\n############################################################";
-   cout<<"\n\nDigite numero positivo ate 2.147.483.520. Qualquer outro, sai: ";
+   cout<<"\n\nDigite um numero positivo: ";
    cin>>n;
   
    if(n>2147483520 || n<-2147483520)
@@ -36,14 +36,15 @@ int main()
        
        cout<<"\nConvertido para binario: ";
        sinal=desempilha(pilha,topo,resto); //inicio do trecho que desempilha todos 
-       
+    
        while(sinal==1)
        {
           cout<<resto;
           sinal=desempilha(pilha,topo,resto);   
        } //fim do trecho de desempilhamento
        topo=-1;
-       cout<<"\n\nDigite numero positivo 2.147.483.520. Qualquer outro, sai: ";
+          barra();
+       cout<<"\n\nDigite um numero positivo: ";
        cin>>n;
        
        if(n>2147483520 || n<-2147483520)
@@ -76,3 +77,10 @@ int desempilha(int p[], int &t, int &v)
       return 1;
    }
 }
+
+void barra()
+{
+   cout<<"\n";     	
+   for(int x=1;x<40;x++)
+	   cout<<"-"; 
+}       
