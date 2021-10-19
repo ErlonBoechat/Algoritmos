@@ -35,7 +35,7 @@ int main()
        }while(num>0); //fim do trecho de empilhamento
        
        cout<<"\nConvertido para binario: ";
-       sinal-desempilha(pilha,topo,resto); //inicio do trecho que desempilha todos 
+       sinal=desempilha(pilha,topo,resto); //inicio do trecho que desempilha todos 
        
        while(sinal==1)
        {
