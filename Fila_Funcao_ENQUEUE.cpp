@@ -4,7 +4,7 @@ void enfileira(queue &fil)
 {
    float valor;
   
-   if(fil.fil==TAM-1) //testando se a fila está cheia 
+   if(fil.fim==TAM-1) //testando se a fila está cheia 
       cout<<"\nAtencao! Fila Cheia\n";
    else
    {
