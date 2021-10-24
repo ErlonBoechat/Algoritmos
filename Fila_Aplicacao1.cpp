@@ -31,7 +31,7 @@ int main()
       cout<<"\n1 - Inserir um valor na fila";
       cout<<"\n2 - Remover um valor da fila";
       cout<<"\n3 - Mostrar o elemento do inicio da fila";
-      cout<<"\n4 - Mostrar situaÁ„o da fila";
+      cout<<"\n4 - Mostrar situacao da fila";
       cout<<"\n5 - Sai";
       cout<<"\nOpcao: "; 
       cin>>resp;op=atoi(resp);
@@ -63,7 +63,7 @@ void enfileira(queue &fil)
 {
    float valor;
   
-   if(fil.fim==TAM-1) //testando se a fila est· cheia 
+   if(fil.fim==TAM-1) //testando se a fila est√° cheia 
       cout<<"\nAtencao! Fila Cheia\n";
    else
    {
@@ -76,7 +76,7 @@ void enfileira(queue &fil)
 
 void desenfileira(queue &fil)
 {
-   if(fil.inicio>fil.fim) //testando se a fila est· vazia
+   if(fil.inicio>fil.fim) //testando se a fila est√° vazia
       cout<<"\nAtencao. Fila Vazia\n";
    else
    {
@@ -88,7 +88,7 @@ void desenfileira(queue &fil)
 void elemPrimeiro(queue &fil)
 {
    if(fil.inicio>fil.fim)
-      cout<<"\nAtenÁ„o. Fila vazia\n";
+      cout<<"\nAten√ß√£o. Fila vazia\n";
    else
       cout<<"Elemento do inicio da fila: "<<fil.f[fil.inicio];
 }
@@ -101,12 +101,12 @@ void situacaoFila(queue &fil)
    {
       cout<<"\nTotal de elementos na fila: "<<fil.fim-fil.inicio+1<<"\n";
       cout<<"\n\nEspaco disponivel na fila: "<<TAM-(fil.fim+1)<<"\n";
-      cout<<"\n\nPosiÁ„o do primeiro elemento da fila: "<<fil.inicio<<"\n";
-      cout<<"\n\nPosiÁ„o do ultimo elemento da fila:"<<fil.fim<<"\n";
+      cout<<"\n\nPosicao do primeiro elemento da fila: "<<fil.inicio<<"\n";
+      cout<<"\n\nPosicao do ultimo elemento da fila:"<<fil.fim<<"\n";
       cout<<"\n\nPara fins didaticos, exibindo a fila\n";
       cout<<"\nValor\tPosicao no vetor\n";
       
-      for(int x=fil.inicio;x=fil.fim;x++)
+      for(int x=fil.inicio;x<=fil.fim;x++)
          cout<<"\n"<<fil.f[x]<<"\t"<<x;
    }
 }
