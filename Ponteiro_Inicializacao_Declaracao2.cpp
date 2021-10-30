@@ -1,3 +1,6 @@
+//No codigo anterior inicializamos a variavel ponteiro na declaracao. 
+//Neste exemplo temos uma inicializacao apos a declaracao
+
 #include<iostream>
 using namespace std;
 
