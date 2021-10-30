@@ -2,6 +2,8 @@
 //com as variáveis simples ou depois da declaração através de um comando de 
 //atribuição onde a variável ponteiro receberá o endereço da variável que ela irá apontar.
 
+//Neste exemplo, inicializamos a variável ponteiro na declaração.
+
 #include<iostream>
 using namespace std;
 int main ()
