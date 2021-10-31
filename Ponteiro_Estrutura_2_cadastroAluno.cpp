@@ -19,7 +19,7 @@ int main()
    cin>>aluno.nota; 
    p=&aluno; //aponta para a estrutura
    
-   exibe(p); //passa p (ponteiro para estrutura) como parametro
+   exibe(p); //passa p (ponteiro da estrutura) como parametro
 
    cout<<"\n\n";
    system("pause");
