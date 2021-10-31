@@ -20,7 +20,7 @@ int main()
       cout<<"\n~ 4 - Exibe                     ~ ";
       cout<<"\n~ 5 - Sai                       ~ ";
       cout<<"\n~                               ~ ";
-      cout<<"\n~ Opção:                        ~ ";
+      cout<<"\n~ Opcao:                        ~ ";
       cout<<"\n~                               ~ ";
       cout<<"\n~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ";
       cin>>op;
