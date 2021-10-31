@@ -20,7 +20,7 @@ int main()
    cin>>aluno.nota; 
    p=&aluno; //aponta para a estrutura
    
-   exibe(p);
+   exibe(p); //passa p (ponteiro para estrutura) como parametro
 
    cout<<"\n\n";
    system("pause");
@@ -32,8 +32,9 @@ void exibe(CADASTRO *m)
    
    for(c=0;c<strlen(m->nome);c++)
    m->nome[c]=toupper(m->nome[c]);
-   cout<<"\nDados do aluno\n";
-   cout<<"\n\nNOME: "<<m->nome; //as duas formas foram usadas
-   cout<<"\n\nNOTA: "<<(*m).nota;
+   cout<<"-------------------";
+   cout<<"\n\nDados do aluno: ";
+   cout<<"\nNome: "<<m->nome; //as duas formas foram usadas
+   cout<<"\nNota: "<<(*m).nota;
    
 }
