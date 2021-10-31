@@ -25,7 +25,7 @@ int main()
       cout<<"\n~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ";
       cin>>op;
       system("cls");
-      system("color 0e");
+      system("color fc");
   
       switch(op)
       {
