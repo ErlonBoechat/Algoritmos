@@ -2,8 +2,7 @@
 #include<cstring>
 using namespace std;
 
-struct CADASTRO
-{
+struct CADASTRO {
    char nome[30];
    float nota;
 };
