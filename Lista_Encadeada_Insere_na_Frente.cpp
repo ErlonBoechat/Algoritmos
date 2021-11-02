@@ -19,7 +19,7 @@ int main()
   
    //segundo no
    temp=new nodo;
-   temp->num=23;
+   temp->num=13;
    temp->prox=lista;
    lista=temp;
 
