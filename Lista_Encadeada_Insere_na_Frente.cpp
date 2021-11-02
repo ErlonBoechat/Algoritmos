@@ -29,7 +29,7 @@ int main()
    temp->prox=lista;
    lista=temp;
 
-   //terceiro no
+   //quarto no
    temp=new nodo;
    temp->num=18;
    temp->prox=lista;
