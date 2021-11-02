@@ -46,4 +46,4 @@ int main()
    delete lista; lista=0;
    cout<<"\n\n";
    system("pause");
-}c
+}
