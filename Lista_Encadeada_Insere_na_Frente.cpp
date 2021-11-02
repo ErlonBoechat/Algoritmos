@@ -40,7 +40,7 @@ int main()
    cout<<"\nValor do 1º no: "<<lista->num;
    cout<<"\nValor do 2º no: "<<lista->prox->num;
    cout<<"\nValor do 3º no: "<<lista->prox->prox->num;
-   cout<<"\nValor do 3º no: "<<lista->prox->prox->prox->num;
+   cout<<"\nValor do 4º no: "<<lista->prox->prox->prox->num;
  
    //liberando
    delete lista; lista=0;
