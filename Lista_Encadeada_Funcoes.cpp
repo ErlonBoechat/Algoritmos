@@ -1,8 +1,8 @@
 #include<iostream>
 #include<locale.h>
 #include<stdlib.h>
-#incluide<string>
-#incluide<cstlib>
+#include<string>
+#include<cstlib>
 using namespace std;
 
 //nó ou nodo
