@@ -2,7 +2,7 @@
 #include<locale.h>
 #include<stdlib.h>
 #include<string>
-#include<cstlib>
+#include<cstdlib>
 using namespace std;
 
 //nó ou nodo
@@ -26,7 +26,7 @@ nodo* removeFim(nodo* ptr);
 //alterar
 void substituiNo(nodo* ptr, int posicao, int novoValor);
 
-int buscaSequencial(nodo* ptr, int posicao, int novoValor);
+int buscaSequencial(nodo* ptr, int valor);
 
 int contaNos(nodo* ptr);
 void libera(nodo* ptr);
@@ -46,17 +46,17 @@ int main()
   
       cout<<"< < < Alocacao Dinamica < < <";
 
-      cout<"\n 1 - Insere na Frente da Lista ";
-      cout<"\n 2 - Insere no Fim da Lista \n";
-      cout<"\n 3 - Remove na Frente da Lista \n";
-      cout<"\n 4 - Remove no Fim da Lista \n";
-      cout<"\n 5 - Exibe Lista ";
-      cout<"\n 6 - Substitui Nó da Lista ";
-      cout<"\n 7 - Conta os Nós da Lista ";
-      cout<"\n 8 - Busca na Lista ";
-      cout<"\n 9 - Libera Lista ";
-      cout<"\n 10 - Sai ";
-      cout<"\n\n Opção: ";
+      cout<<"\n 1 - Insere na Frente da Lista ";
+      cout<<"\n 2 - Insere no Fim da Lista \n";
+      cout<<"\n 3 - Remove na Frente da Lista \n";
+      cout<<"\n 4 - Remove no Fim da Lista \n";
+      cout<<"\n 5 - Exibe Lista ";
+      cout<<"\n 6 - Substitui Nó da Lista ";
+      cout<<"\n 7 - Conta os Nós da Lista ";
+      cout<<"\n 8 - Busca na Lista ";
+      cout<<"\n 9 - Libera Lista ";
+      cout<<"\n 10 - Sai ";
+      cout<<"\n\n Opção: ";
       cin>>op;
 
       system("cls");
@@ -115,7 +115,7 @@ int main()
 
                     while(pos>contaNos(lista))
                     {
-                       cout"\nPosição inválida\n";
+                       cout<<"\nPosição inválida\n";
                        cout<<"Qual a posição do nó?";
                        cin>>pos;  
                     }
@@ -171,8 +171,135 @@ int main()
 
         default:
                   cout<<"\nOpção Inválida";
-
-
      }
+     cout<<"\n\n";
+     system("pause");
+
+   } while(op!=10);
+}
+
+nodo* insereFrente(nodo* ptr, int valor)
+{   
+   nodo* temp=new nodo;
+   
+   if(!temp)
+   {
+      cout<<"\nNão foi possível fazer a alocação de memória\n";
+      system("pause");
+      exit(1);
    }
+   temp->info=valor;
+   temp->prox=ptr;
+   return temp; 
+}
+
+nodo* insereFim(nodo* ptr, int valor)
+{
+   nodo* novo, *aux;
+   novo=new nodo;
+    
+   if(!novo)
+   {
+      cout<<"\nNão foi possível fazer a alocação de memória\n";
+      system("pause");
+      exit(1);
+   }
+   novo->info=valor;
+   novo->prox=NULL;
+   
+   if(!ptr)
+      ptr=novo;
+   else
+   {
+      aux=ptr;
+      
+      while(aux->prox)
+         aux=aux->prox;
+         aux->prox=novo;
+   }
+   return ptr;
+}
+
+void exibe(nodo* ptr)
+{
+   cout<<"\nListando\n";
+   while(ptr)
+   {
+      cout<<"\n"<<ptr->info;
+      ptr=ptr->prox;
+   }
+}
+
+nodo* removeFrente(nodo* ptr)
+{
+   nodo* aux;
+   aux=ptr;
+   ptr=ptr->prox;
+   delete aux;
+   return ptr;
+}
+
+nodo* removeFim(nodo* ptr)
+{
+   nodo* aux, *ultimo;
+   
+   if(!ptr->prox)
+   {
+      delete ptr;
+      ptr=NULL;
+      return ptr;
+   }
+   else
+   {
+      aux=ptr;
+      
+      while(aux->prox->prox)//auxiliar caminha até apontar para o penúltimo nó
+      
+         aux=aux->prox;
+         ultimo=aux->prox;
+         delete ultimo;
+         aux->prox=NULL;
+         return ptr;
+       
+   }
+}
+
+void substituiNo(nodo* ptr, int posicao, int novoValor)
+{
+   int conta=1;
+   
+   while(conta!=posicao)
+   {
+      ptr=ptr->prox;
+      conta++;
+   }
+   ptr->info=novoValor;
+}
+
+int contaNos(nodo* ptr)
+{
+   int conta=0;
+   
+   while(ptr)
+   {
+      conta++;
+      ptr=ptr->prox;
+   }
+   return conta;
+}
+
+int buscaSequncial(nodo* ptr, int valor)
+{
+   while(ptr)
+   {
+      if(ptr->info==valor)
+         return 1;
+      ptr=ptr->prox; 
+   }
+   return 0;
+}
+
+void libera(nodo* ptr)
+{
+   delete ptr; ptr=0;    
 }
