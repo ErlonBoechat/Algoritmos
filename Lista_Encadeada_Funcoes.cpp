@@ -288,7 +288,7 @@ int contaNos(nodo* ptr)
    return conta;
 }
 
-int buscaSequncial(nodo* ptr, int valor)
+int buscaSequencial(nodo* ptr, int valor)
 {
    while(ptr)
    {
