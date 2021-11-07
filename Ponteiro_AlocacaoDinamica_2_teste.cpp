@@ -71,7 +71,7 @@ int main()
                     for(x=0;x<n;x++)
                     {
                        cout<<"\n"<<setw(3)<<x+1<<" - "<<alunos[x];
-                       cout<<"\n\nMedia da turma"<<setprecision(4)<<media;
+                       cout<<"\n\nMedia da turma: "<<setprecision(4)<<media;
                     }
                  } 
                  else cout<<"\nVoce pulou alguma(s) etapa(s)\n";
