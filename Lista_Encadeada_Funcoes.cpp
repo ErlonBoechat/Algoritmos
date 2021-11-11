@@ -9,7 +9,7 @@ using namespace std;
 struct nodo
 {
    int info;
-   nodo* prox;   
+   struct nodo* prox;   
 };
 
 //inserir
