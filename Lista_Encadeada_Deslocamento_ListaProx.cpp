@@ -8,7 +8,7 @@ struct nodo {
 
 int main() {
   
-  nodo *aux;
+  nodo *aux, *ultimo;
   nodo *lista, *link=NULL;
   
   lista=new nodo;
@@ -25,6 +25,28 @@ int main() {
   lista->info=71;
   lista->prox=link;
   link=lista;
+  
+   lista=new nodo;
+  lista->info=99;
+  lista->prox=link;
+  link=lista;
+  
+   lista=new nodo;
+  lista->info=54;
+  lista->prox=link;
+  link=lista;
+  
+  aux=lista;
+  
+  while(aux)
+  {      aux=aux->prox;
+         ultimo=aux->prox;
+         lista=aux->prox;
+         ultimo=aux->prox;
+         
+         //delete ultimo;
+         //aux->prox=NULL;
+  } 
   
   aux=lista;
   lista=lista->prox;
