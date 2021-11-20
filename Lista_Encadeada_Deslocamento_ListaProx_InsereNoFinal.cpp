@@ -35,18 +35,13 @@ int main() {
   lista->prox=link;
   link=lista;
   
-  //while(lista->prox->prox)
-  //{      
-    //lista=lista->prox;
-    nodo *novo=new nodo, *aux;
+ 
+  nodo *novo=new nodo, *aux;
   
     aux=lista;
     while(aux->prox)
     aux=aux->prox;
     aux->prox=novo;
-  //} 
-  
-  lista->prox=NULL;
   
   return 0;
 }
