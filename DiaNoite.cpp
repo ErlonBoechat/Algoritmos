@@ -5,14 +5,22 @@ int main()
 {
 setlocale(LC_ALL, "ptb");
 int hora;
-cout<< "Informe a hora: ";
-cin >> hora;
-if(hora>=6&&hora<=18)
+while(hora!=100)
 {
-	cout<<"É dia";
+    
+cout<< "\nInforme a hora: ";
+cin >> hora;
+if(hora>=6&&hora<=17)
+{
+	cout<<"Ã‰ dia";
+}
+else if(hora<25)
+{
+	cout<< "Ã‰ noite";
 }
 else
-{
-	cout<< "É noite";
+cout<<"\nHora errada";
+
+cout<<"\n----------------------";
 }
 }
