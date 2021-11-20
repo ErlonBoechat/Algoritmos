@@ -102,28 +102,6 @@ int main() {
     count++;
     
     
-    novo=new nodo, *aux;
-  
-    aux=lista;
-    while(aux->prox)
-    aux=aux->prox;
-    aux->prox=novo;
-    novo->info=987;
-    novo->prox=NULL;
-    novo=lista;aux=lista;  
-    count++;
-    
-  novo=new nodo, *aux;
-  
-    aux=lista;
-    while(aux->prox)
-    aux=aux->prox;
-    aux->prox=novo;
-    novo->info=732;
-    novo->prox=NULL;
-    novo=lista;aux=lista; 
-    count++;
-    
   //Exibe 
     
   for(int x=1;x<=count;x++)
