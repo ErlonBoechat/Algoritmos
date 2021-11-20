@@ -11,6 +11,8 @@ int main() {
   int count=0;
   nodo *lista, *link=NULL;
   
+ //Insere no inicio
+   
   lista=new nodo;
   lista->info=33;
   lista->prox=link;
