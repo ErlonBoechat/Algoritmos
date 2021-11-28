@@ -2,10 +2,15 @@ package aula04;
 public class Caneta {
     public String modelo;
     private float ponta;
+    private String cor;
     private boolean tampada;
     
-    public void Caneta() //método construtor
+    public Caneta(String m, String c, float p) //método construtor
     {
+        this.modelo=m;
+        this.cor=c;
+        this.ponta=p;
+        this.tampar();
         
     }
     
@@ -38,7 +43,9 @@ public class Caneta {
     {
         System.out.println("SOBRE A CANETA:");
         System.out.println("Modelo: " + this.modelo);
+        System.out.println("Cor: " + this.cor);
         System.out.println("Ponta: " + this.ponta);
+        System.out.println("Tampada: " + this.tampada);
     }   
    
 }
