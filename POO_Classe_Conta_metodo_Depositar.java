@@ -3,12 +3,12 @@
         if(status==true)
         {    
              saldo+=d;  
-             return d;
+             return saldo;
         }
         else
         {
             System.out.println("Operação Inválida. Conta inexistente");
-            return d;
+            return saldo;
         }
 
     }
