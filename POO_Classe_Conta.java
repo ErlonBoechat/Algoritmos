@@ -14,9 +14,7 @@ public class Conta {
         status=false;
     }
     
-    //----------------------------------------|  
-    
-    //Métodos
+    //Métodos específicos
     public String abrirConta(String t)
     {
         setTipo(t);
@@ -33,13 +31,29 @@ public class Conta {
     
     public void fecharConta()
     {
-        
+        if(saldo>0)
+            System.out.println("Saque o valor de R$" +saldo + " restante em sua conta.");
+        else if(saldo<0)
+            System.out.println("ATENÇÃO: Sua conta possui défict de R$"+saldo+".");
+        else
+        {
+            setStatus(false);
+        }
     }
     
     public float depositar(float d)
     {
-        saldo+=d;
-        return d;
+        if(status==true)
+        {    
+             saldo+=d;  
+             return d;
+        }
+        else
+        {
+            System.out.println("Operação Inválida. Conta inexistente");
+            return d;
+        }
+
     }
     
     public float sacar(float sc)
@@ -57,22 +71,25 @@ public class Conta {
     
     //----------------------------------------|
     
-    //strs e gtrs
+    //strs e gtrs (métodos especiais)
     public void setNumConta(int n)
     {
         NumConta=n;
     }
-    public void getNumConta()
+    public int getNumConta()
     {
         System.out.println("Número da Conta: " + NumConta);
+        return NumConta;
     }
-    public void setTipo(String t)
+    public String setTipo(String t)
     {   
         tipo=t;
+        return tipo;
     }
-    public void getTipo()
+    public String getTipo()
     {
         System.out.println(tipo);
+        return tipo;
     }       
     public void setDono(String d)
     {
