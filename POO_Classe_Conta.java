@@ -2,46 +2,44 @@ package contabanco;
 public class Conta {
     //atributos
     public int NumConta;
-    private String tipo;
+    protected String tipo;
     private String dono;
     private float saldo;
     private boolean status;
-    
-    //construtor
-    public Conta()
-            {
-        saldo=0;
-        status=false;
-    }
-    
-    //Métodos específicos
-    public String abrirConta(String t)
+   
+    //Métodos personalizados (específicos)
+    public void abrirConta(String t)
     {
-        setTipo(t);
-        setStatus(true);
+        this.setTipo(t);
+        this.setStatus(true);
         
         if(t=="cc")
-            saldo=50;
+        {    this.setSaldo(50);
+            System.out.println("Conta corrente aberta com sucesso.");
+        }
         else if(t=="cp")
-            saldo=150;
+        {    
+            this.setSaldo(150);
+            System.out.println("Conta poupança aberta com sucesso.");
+        }    
         else
             System.out.println("ERRO 1");
-        return t;
     }
     
     public void fecharConta()
     {
-        if(saldo>0)
-            System.out.println("Saque o valor de R$" +saldo + " restante em sua conta.");
-        else if(saldo<0)
-            System.out.println("ATENÇÃO: Sua conta possui défict de R$"+saldo+".");
+        if(this.getSaldo()>0)
+            System.out.println("Saque o valor de R$" + this.saldo + " restante em sua conta.");
+        else if(this.getSaldo()<0)
+            System.out.println("ATENÇÃO: Sua conta possui défict de R$"+this.saldo+".");
         else
         {
-            setStatus(false);
+            this.setStatus(false); 
+            System.out.println("Conta fechada com sucesso.");
         }
     }
     
-    public float depositar(float d)
+     public float depositar(float d)
     {
         if(status==true)
         {    
@@ -56,64 +54,82 @@ public class Conta {
 
     }
     
-    public float sacar(float sc)
+     public float sacar(float sc)
     {
-        saldo-=sc;
+        if(status==true)
+            if(saldo>=sc)
+            {  saldo-=sc; 
+                System.out.println("Sacado: R$"+sc+" | Saldo atual: R$"+saldo);  
+            }
+            else if(saldo<sc)
+                System.out.println("Saldo insuficiente");
+        else
+            System.out.println("Operação Inválida. Conta inexistente");
         return saldo;
     }
     
     public float pagarMensal(float pgM)
     {
+        if(status==true)
+        {
         saldo-=pgM;
+        }
+        else
+        {
+            System.out.println("Operação Inválida. Conta inexistente");
+        }
         return saldo;
     }
-    
-    
-    //----------------------------------------|
-    
-    //strs e gtrs (métodos especiais)
-    public void setNumConta(int n)
-    {
-        NumConta=n;
+
+    //construtor
+    public Conta()
+            {
+        this.saldo=0;
+        this.status=false;
     }
-    public int getNumConta()
-    {
-        System.out.println("Número da Conta: " + NumConta);
+   
+    //strs e gtrs (métodos especiais)
+
+    public int getNumConta() {
         return NumConta;
     }
-    public String setTipo(String t)
-    {   
-        tipo=t;
+
+    public void setNumConta(int NumConta) {
+        this.NumConta = NumConta;
+    }
+
+    public String getTipo() {
         return tipo;
     }
-    public String getTipo()
-    {
-        System.out.println(tipo);
-        return tipo;
-    }       
-    public void setDono(String d)
-    {
-        dono=d;
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
-    public void getDono()
-    {
-        System.out.println("Proprietário: "+dono);
-    } 
-    public void setSaldo(float s)
-    {
-        saldo+=s;
+
+    public String getDono() {
+        return dono;
     }
-    public void getSaldo()
-    {
-        System.out.println("Saldo: "+saldo);
-    } 
-    public void setStatus(boolean st)
-    {
-        status=st;
+
+    public void setDono(String dono) {
+        this.dono = dono;
     }
-    public void getStatus()
-    {
-        System.out.println(status);
+
+    public float getSaldo() {
+        return saldo;
     }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+   
+    
 }
   
