@@ -8,6 +8,17 @@ public class Conta {
     private boolean status;
    
     //Métodos personalizados (específicos)
+    
+    public void estadoAtual()
+    {
+        System.out.println("--------------------------------");
+        System.out.println("Conta: "+this.getNumConta());
+        System.out.println("Tipo: "+this.getTipo());
+        System.out.println("Proprietário: "+this.getDono());
+        System.out.println("Saldo: "+this.getSaldo());
+        System.out.println("Status: "+this.getStatus());    
+    }
+    
     public void abrirConta(String t)
     {
         this.setTipo(t);
@@ -39,48 +50,54 @@ public class Conta {
         }
     }
     
-     public float depositar(float d)
+     public void depositar(float d)
     {
-        if(status==true)
+        if(this.getStatus())
         {    
-             saldo+=d;  
-             return d;
+             //this.saldo+=d;  
+             this.setSaldo(this.getSaldo()+d);
+             System.out.println("Depósito realizado com sucesso para: "+this.getDono()+".");
         }
         else
         {
             System.out.println("Operação Inválida. Conta inexistente");
-            return d;
         }
 
     }
-    
-     public float sacar(float sc)
+
+     public void sacar(float sc)
     {
-        if(status==true)
-            if(saldo>=sc)
-            {  saldo-=sc; 
-                System.out.println("Sacado: R$"+sc+" | Saldo atual: R$"+saldo);  
+        if(this.getStatus())
+            if(this.getSaldo()>=sc)
+            {  this.setSaldo(this.getSaldo()-sc); 
+                System.out.println("Sacado: R$"+sc+" | Saldo atual: R$"+this.getSaldo());  
             }
-            else if(saldo<sc)
+            else if(this.getSaldo()<sc)
                 System.out.println("Saldo insuficiente");
         else
             System.out.println("Operação Inválida. Conta inexistente");
-        return saldo;
     }
     
-    public float pagarMensal(float pgM)
+    public void pagarMensal(float pgM)
     {
-        if(status==true)
+        int v=0;
+        if(this.getTipo()=="cc")
+            v=12;
+        else if(this.getTipo()=="cp")
         {
-        saldo-=pgM;
+            v=20;
         }
-        else
+        if (this.getStatus())
         {
-            System.out.println("Operação Inválida. Conta inexistente");
+            this.setSaldo(this.getSaldo()-v);
+            System.out.println("Mensalidade paga com sucesso por "+this.getDono());   
         }
-        return saldo;
+        else 
+            System.out.println("Impossível pagar. Conta fechada.");
     }
 
+    //métodos especiais
+    
     //construtor
     public Conta()
             {
@@ -88,7 +105,7 @@ public class Conta {
         this.status=false;
     }
    
-    //strs e gtrs (métodos especiais)
+    //strs e gtrs
 
     public int getNumConta() {
         return NumConta;
@@ -122,14 +139,11 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
     public void setStatus(boolean status) {
         this.status = status;
     }
-   
-    
 }
-  
