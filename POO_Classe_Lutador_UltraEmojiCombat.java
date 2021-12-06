@@ -94,25 +94,25 @@ public void empatarLuta()
     }
 
     private void setCategoria() {
-        if(peso<52.2)
+        if(this.peso<52.2)
         {
-            System.out.println("Categoria inválida. Está abaixo do peso mínimo.");
+            this.categoria="Categoria inválida. Está abaixo do peso mínimo";
         }
-        else if(peso<=70.3)
-        {
-            System.out.println("Categoria: Leve.");
+        else if(this.peso<=70.3)
+        { 
+            this.categoria="Leve";
         }
-        else if(peso<=83.9)
+        else if(this.peso<=83.9)
         {
-            System.out.println("Categoria: Médio.");
+            this.categoria="Médio";
         }
-        else if(peso<=120.2)
+        else if(this.peso<=120.2)
         {
-            System.out.println("Categoria: Pesado.");
+            this.categoria="Pesado";
         }
         else
         {
-            System.out.println("Categoria inválida: Acima do peso máximo.");
+            this.categoria="Categoria inválida: Acima do peso máximo.";
         }
     }
 
