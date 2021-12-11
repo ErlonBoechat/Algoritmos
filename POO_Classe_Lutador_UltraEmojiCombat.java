@@ -16,23 +16,36 @@ public class Lutador {
     //métodos públicos
 public void apresentar()
 {
-    
+    System.out.println("-----------------------------");
+    System.out.println("Lutador: "+this.getNome());
+    System.out.println("Origem: "+this.getNacionalidade());
+    System.out.println(this.getIdade()+" anos");
+    System.out.println(this.getAltura()+"m");
+    System.out.println("Peso: "+this.getPeso()+"kg");
+    System.out.println("Vitórias: "+this.getVitorias());
+    System.out.println("Derrotas: "+this.getDerrotas());
+    System.out.println("Empates: "+this.getEmpates());
 }
 public void status()
 {
-    
+    System.out.println("-----------------------------");
+    System.out.println(this.getNome());
+    System.out.println("Categoria: "+this.getCategoria());
+    System.out.println(getVitorias()+" vitórias");
+    System.out.println(getDerrotas()+" Derrotas");
+    System.out.println(getEmpates()+" Empates");
 }
 public void ganharLuta()
 {
-    
+    this.setVitorias(this.getVitorias()+1);
 }
 public void perderLuta()
 {
-    
+    this.setDerrotas(this.getDerrotas()+1);
 }
 public void empatarLuta()
 {
-    
+    this.setEmpates(this.getEmpates()+1);
 }
 
 //métodos especiais
@@ -42,7 +55,7 @@ public void empatarLuta()
         this.nacionalidade = na;
         this.idade = id;
         this.altura = al;
-        this.peso = pe;
+        this.setPeso(pe);
         this.vitorias = vi;
         this.derrotas = de;
         this.empates = em;
@@ -135,10 +148,8 @@ public void empatarLuta()
     public int getEmpates() {
         return empates;
     }
-
+    
     public void setEmpates(int empates) {
         this.empates = empates;
     }
-
-
 }
