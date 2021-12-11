@@ -45,19 +45,21 @@ public class Luta {
             switch(vencedor)
             {
                 case 0:
-                    System.out.println("\n");
+                    System.out.println(" ");
                     System.out.println("==============================");
-                    System.out.println("Empatou");
-                    System.out.println("\n");
-                    this.desafiante.empatarLuta();
+                    System.out.println(" ");
+                    System.out.println("------- Empatou ------- ");
+                    System.out.println(" ");
+                    this.desafiado.empatarLuta();
                     this.desafiante.empatarLuta(); 
                 break;
                 
                 case 1:
-                    System.out.println("\n");
+                    System.out.println(" ");
                     System.out.println("==============================");
-                    System.out.println("Vitória do "+this.desafiado.getNome());
-                    System.out.println("\n");
+                    System.out.println(" ");
+                    System.out.println("---- Vencedor: "+this.desafiado.getNome()+" ------- ");
+                    System.out.println(" ");
                     this.desafiado.ganharLuta();
                     this.desafiante.perderLuta();
                 break;
@@ -65,8 +67,9 @@ public class Luta {
                 case 2:
                     System.out.println(" ");
                     System.out.println("==============================");
-                    System.out.println("Vitória do "+this.desafiante.getNome());
-                    System.out.println("\n");
+                    System.out.println(" ");
+                    System.out.println("---- Vencedor: "+this.desafiante.getNome()+" ------- ");
+                    System.out.println(" ");
                     this.desafiado.perderLuta();
                     this.desafiante.ganharLuta();
                 break;    
