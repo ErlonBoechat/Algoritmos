@@ -9,14 +9,10 @@ public class Lutador {
     private String categoria;
     private int vitorias, derrotas, empates;
 
-    Lutador() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
     //métodos públicos
 public void apresentar()
 {
-    System.out.println("-----------------------------");
+    System.out.println("----------------------------------");
     System.out.println("Lutador: "+this.getNome());
     System.out.println("Origem: "+this.getNacionalidade());
     System.out.println(this.getIdade()+" anos");
@@ -28,7 +24,7 @@ public void apresentar()
 }
 public void status()
 {
-    System.out.println("-----------------------------");
+    System.out.println("----------------------------------");
     System.out.println(this.getNome());
     System.out.println("Categoria: "+this.getCategoria());
     System.out.println(getVitorias()+" vitórias");
