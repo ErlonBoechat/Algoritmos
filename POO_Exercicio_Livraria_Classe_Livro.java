@@ -86,7 +86,8 @@ public class Livro implements Publicacao{
     public void fechar() {
     this.aberto=false;
     }
-
+    
+    @Override 
     public void folhear(int p) {
       this.pagAtual=p;
     }
@@ -100,11 +101,4 @@ public class Livro implements Publicacao{
     public void voltarPag() {
         this.pagAtual--;
     }  
-
-    @Override
-    public void folhear() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-
 }
