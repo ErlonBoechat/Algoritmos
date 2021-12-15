@@ -14,7 +14,7 @@ public class Livro implements Publicacao{
         return "Livro{" + "titulo = " + titulo + "\n, autor = " 
                 + autor + "\n, totPaginas = " + totPaginas 
                 + "\n, pagAtual = " + pagAtual + ", aberto = " 
-                + aberto + ", leitor = " + leitor.getNome() + '}'; //"leitor" é instância da classe "Pessoa" - então pode usar métodos públicos dessa classe
+                + aberto + ", leitor = " + leitor.getNome() + '}'; //"leitor" é instância da classe "Pessoa" - então pode usar métodos públicos dessa classe, como getNome(). Se isso não for feito, o programa exibe apenas uma referência de endereço para "leitor", que é uma referência da classe "Pessoa"
     }
     
     //métodos especiais
