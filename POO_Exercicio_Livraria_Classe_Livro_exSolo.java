@@ -11,10 +11,10 @@ public class Livro implements Publicacao{
     //métodos públicos
    
     public String detalhes() {
-        return "Livro{" + "titulo=" + titulo + "\n, autor=" 
-                + autor + "\n, totPaginas=" + totPaginas 
-                + "\n, pagAtual=" + pagAtual + ", aberto=" 
-                + aberto + ", leitor=" + leitor + '}';
+        return "Livro{" + "titulo = " + titulo + "\n, autor = " 
+                + autor + "\n, totPaginas = " + totPaginas 
+                + "\n, pagAtual = " + pagAtual + ", aberto = " 
+                + aberto + ", leitor = " + leitor.getNome() + '}'; //"leitor" é instância da classe "Pessoa" - então pode usar métodos públicos dessa classe
     }
     
     //métodos especiais
@@ -102,7 +102,5 @@ public class Livro implements Publicacao{
     public void voltarPag() {
         this.pagAtual--;
     
-    }
-    
-    
+    }    
 }
