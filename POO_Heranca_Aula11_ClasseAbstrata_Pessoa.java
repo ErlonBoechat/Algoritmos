@@ -1,5 +1,5 @@
 package aula11;
-public abstract class Pessoa { //classe absrata
+public abstract class Pessoa { //classe abstrata
     //atributos
     private String nome;
     private int idade;
