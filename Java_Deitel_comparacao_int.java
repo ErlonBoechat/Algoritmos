@@ -1,3 +1,5 @@
+//Compare números inteiros utilizando instruções if, operadores relacionais e operadores de igualdade.
+
 import java.util.Scanner;
 public class Comparison
 {
