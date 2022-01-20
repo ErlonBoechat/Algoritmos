@@ -7,7 +7,7 @@ unarios.
 
 */
 
-class ConversaoTiposExplicita {
+class ConversaoTiposImplicita {
     public static void main(String[] args) {
 
     float x;
