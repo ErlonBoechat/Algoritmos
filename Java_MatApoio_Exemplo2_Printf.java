@@ -13,7 +13,7 @@ import java.util.Scanner;
 
       public static void main(String [] args) {
 
-    float media = 34.6f;
-    System.out.printf("Media = %2f ", media);
+    double media = 34.799999;
+    System.out.printf("Media = %.2f ", media);
    }
 }
