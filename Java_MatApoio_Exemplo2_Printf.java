@@ -1,9 +1,9 @@
 /*
-Mostrar o valor da variável media, previamente definida, 
-com duas casas decimais. Note que média é do tipo float 
+Mostrar o valor da variavel media, previamente definida, 
+com duas casas decimais. Note que media é do tipo float 
 ou double.
 
-Veja que não há + como no
+Veja que não ha + como no
 print ou println
 
 */
