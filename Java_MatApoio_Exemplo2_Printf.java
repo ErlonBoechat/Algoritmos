@@ -1,10 +1,17 @@
 /*
+
+Usa-se %f para ponto flutuante, %s para string. Se quisermos
+especificar o número de casas decimais, devemos colocar o 
+número de casas entre o "%", o "." e o "f".
+
+Exemplo:
+
 Mostrar o valor da variavel media, previamente definida, 
 com duas casas decimais. Note que media é do tipo float 
 ou double.
 
-Veja que não ha + como no
-print ou println
+Veja que não ha "+" como no
+print ou println e sim uma virgula
 
 */
 
