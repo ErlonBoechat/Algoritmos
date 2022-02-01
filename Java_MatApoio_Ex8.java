@@ -1,3 +1,6 @@
+
+//Qual o resultado das expressoes abaixo?
+
 class ResultadoExpressoes {
     public static void main(String[] args) {
         double a,b,c,d,e,f,g,h;
