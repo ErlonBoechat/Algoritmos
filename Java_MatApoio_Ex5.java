@@ -7,7 +7,7 @@ import java.util.Scanner;
 class ResultOps {
     public static void main(String[] args) {
 
-      int x,y,stored;
+      int x,y;
     
       Scanner numero = new Scanner(System.in);
       
