@@ -45,13 +45,13 @@ int main()
        switch(op)
       { 
          case 1:cout<<"\nDigite valor a ser inserido: ";
-         cin>>valor;
-         lista = insere(lista, valor);
+            cin>>valor;
+            lista = insere(lista, valor);
          break;
 
       
          case 2:if(!lista)
-         cout << "\n\nNada a remover. Lista vazia\n";
+            cout << "\n\nNada a remover. Lista vazia\n";
          else
         {
            cout<<"\nDigite valor a ser removido: ";
