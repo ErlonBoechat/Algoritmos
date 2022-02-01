@@ -1,3 +1,9 @@
+/*
+Ler o raio de um círculo. Em seguida, imprima o 
+comprimento (2pR) e a area (pR2) do circulo que possui 
+esse raio.
+*/
+
 import java.util.Scanner;
 import java.lang.Math;
 
