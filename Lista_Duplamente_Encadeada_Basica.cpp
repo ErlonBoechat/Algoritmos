@@ -17,76 +17,93 @@ void libera(listaDE *LISTA);
 //Programa principal
 int main()
 {
- int op, valor;
- //inicializa a lista duplamente encadeada
- struct listaDE *lista= NULL;
+    int op, valor;
+    //inicializa a lista duplamente encadeada
+ 
+    struct listaDE *lista= NULL;
+   
+    do
+   {
+       system("cls");
+       system("color 2f");
+       cout<<"\n\n( () ) Alocacao Dinamica ( () )";
+       cout<<"\n( )";
+       cout<<"\n( 1- Insere na 1a posicao )";
+       cout<<"\n( 2- Remove da Lista DE )";
+       cout<<"\n( 3- Exibe a Lista DE )";
+       cout<<"\n( 4- Conta Nos da Lista DE )";
+       cout<<"\n( 5- Libera a Lista DE )";
+       cout<<"\n( 6- Sai )";
+       cout<<"\n( Opcao: )";
+       cout<<"\n( )";
+       cout<<"\n( ( ) ) ( ( ) ) ( ( ) ) ( ( ) )\n";
+       cin>>op;
+     
+       system("cls");
+       system("color f2");
+ 
+       switch(op)
+      { 
+         case 1:cout<<"\nDigite valor a ser inserido: ";
+         cin>>valor;
+         lista = insere(lista, valor);
+         break;
 
- do
- {
- system("cls");
- system("color 2f");
- cout<<"\n\n( () ) Alocacao Dinamica ( () )";
- cout<<"\n( )";
- cout<<"\n( 1- Insere na 1a posicao )";
- cout<<"\n( 2- Remove da Lista DE )";
- cout<<"\n( 3- Exibe a Lista DE )";
- cout<<"\n( 4- Conta Nos da Lista DE )";
- cout<<"\n( 5- Libera a Lista DE )";
- cout<<"\n( 6- Sai )";
- cout<<"\n( Opcao: )";
- cout<<"\n( )";
- cout<<"\n( ( ) ) ( ( ) ) ( ( ) ) ( ( ) )\n";
- cin>>op;
- system("cls");
- system("color f2");
- switch(op)
- { 
+      
+         case 2:if(!lista)
+         cout << "\n\nNada a remover. Lista vazia\n";
+         else
+        {
+           cout<<"\nDigite valor a ser removido: ";
+           cin>>valor;
+           lista=remove(lista, valor);
+        }
+         break;
 
- case 1:cout<<"\nDigite valor a ser inserido: ";
- cin>>valor;
- lista = insere(lista, valor);
- break;
+      
+         case 3: if(!lista)
+            cout << "\n\nLista vazia\n";
+         else
+            exibe(lista);
+         break;
+      
+      
+         case 4:if(!lista)
+            cout << "\n\nLista vazia\n";
+         else
+            cout<<"\nTotal de nos: "<< contaNos(lista);
+         break;
+      
+      
+         case 5: if(lista)
+             cout<<"\nTem elementos na Lista\n";
+         else
+        {
+            libera(lista);
+            cout<<"\nLiberando Memoria";
+        }
+         break;
 
- case 2:if(!lista)
- cout << "\n\nNada a remover. Lista vazia\n";
- else
- {
- cout<<"\nDigite valor a ser removido: ";
- cin>>valor;
- lista=remove(lista, valor);
- }
- break;
+      
+      
+         case 6: cout<<"Fechando Lista Duplamente Encadedada\n";
+         break;
 
- case 3: if(!lista)
- cout << "\n\nLista vazia\n";
- else
- exibe(lista);
- break;
- case 4:if(!lista)
- cout << "\n\nLista vazia\n";
- else
- cout<<"\nTotal de nos: "<< contaNos(lista);
- break;
- case 5: if(lista)
- cout<<"\nTem elementos na Lista\n";
- else
- {
- libera(lista);
- cout<<"\nLiberando Memoria";
- }
- break;
+      
+         default:cout<<"\nOpcao Invalida\n";
+         
+     }
+     
+     
+      cout<<"\n\n";
+      system("pause");
 
- case 6: cout<<"Fechando Lista Duplamente Encadedada\n";
- break;
+ 
+   } while(op !=6);
+  
+    return 0;
+ } 
 
- default:cout<<"\nOpcao Invalida\n";
- }
- cout<<"\n\n";
- system("pause");
-
-} while(op !=6);
-return 0;
-} 
 // insere no início
 listaDE *insere(listaDE *LISTA, int valor)
 {
