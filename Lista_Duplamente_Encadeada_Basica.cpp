@@ -26,7 +26,7 @@ int main()
    {
        system("cls");
        system("color 2f");
-       cout<<"\n\n( () ) Alocacao Dinamica ( () )";
+       cout<<"\n\n----- Alocacao Dinamica -----";
        cout<<"\n( )";
        cout<<"\n( 1- Insere na 1a posicao )";
        cout<<"\n( 2- Remove da Lista DE )";
@@ -36,7 +36,7 @@ int main()
        cout<<"\n( 6- Sai )";
        cout<<"\n( Opcao: )";
        cout<<"\n( )";
-       cout<<"\n( ( ) ) ( ( ) ) ( ( ) ) ( ( ) )\n";
+       cout<<"\n------------------------\n";
        cin>>op;
      
        system("cls");
