@@ -1,3 +1,8 @@
+/*
+Ler dois valores inteiros e imprimir o resultado da soma, subtracao, multiplicacao,
+quociente e resto da divisao
+*/
+
 import java.util.Scanner;
 class ResultOps {
     public static void main(String[] args) {
