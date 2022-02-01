@@ -3,8 +3,6 @@ Ler dois valores reais e imprimir o resultado da soma,
 subtracao, multiplicacao e divisao.
 */
 
-
-import java.util.Scanner;
 class ResultOps {
     public static void main(String[] args) {
 
