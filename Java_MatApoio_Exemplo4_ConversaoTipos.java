@@ -1,3 +1,5 @@
+//erro. Estudar a aplicacao do operador casting
+
 class ConversaoTipos {
     public static void main(String[] args) {
 
