@@ -15,12 +15,11 @@ class NotaAlunos {
         System.out.print("Digite o numero de alunos: ");
         n = read.nextInt();
         
-        
         for(int x=0;x<20;x++)
         System.out.print("-");
         System.out.println(" ");
         
-        float nota[] = new float[n]; //precisa ser inicializado depois da inicializacao de n
+        float nota[] = new float[n]; //precisa ser inicializado depois da atribuicao de valor a 'n'
         
         for(int c=0;c<n;c++)
         {
