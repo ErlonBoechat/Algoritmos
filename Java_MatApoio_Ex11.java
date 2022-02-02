@@ -1,3 +1,8 @@
+/*
+Ler um numero de alunos n. Em seguida, ler as notas dos n alunos e imprimir, ao
+final, a media da turma. Faca uma solucao com for e outra solucao com while.
+*/
+
 import java.util.Scanner;
 class NotaAlunos {
     public static void main(String[] args) {
