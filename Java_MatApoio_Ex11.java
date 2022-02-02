@@ -20,7 +20,7 @@ class NotaAlunos {
         System.out.print("-");
         System.out.println(" ");
         
-        float nota[] = new float[n]; //precisa ser inicializado depois da inicializacao de n
+        float nota[] = new float[n]; //precisa ser inicializado depois de atribuirmos valor a 'n'
         
         for(int c=0;c<n;c++)
         {
