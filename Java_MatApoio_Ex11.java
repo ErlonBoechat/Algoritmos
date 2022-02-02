@@ -26,6 +26,7 @@ class NotaAlunos {
         {
             System.out.print("\nDigite a nota do "+(c+1)+" aluno: ");
             nota[c] = read.nextFloat();
+            soma+=nota[c];
         }
         
         for(int x=0;x<20;x++)
@@ -34,8 +35,7 @@ class NotaAlunos {
         
         for(int c=0;c<n;c++)
         {
-        System.out.print(nota[c]+"\n");
-        soma+=nota[c];
+        System.out.print((c+1)+" aluno :"+ nota[c]+"\n");
         }
         
         for(int x=0;x<20;x++)
