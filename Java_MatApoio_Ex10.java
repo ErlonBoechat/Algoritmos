@@ -1,3 +1,10 @@
+/*
+Ler um caracter op representando uma operação 
+aritmética (+, -, *, /) e em seguida dois números reais 
+a e b. Imprimir a expressão matemática junto com o seu 
+resultado no formato: a op b = resultado
+*/
+
 import java.util.Scanner;
 class OpAritmetica {
     public static void main(String[] args) {
