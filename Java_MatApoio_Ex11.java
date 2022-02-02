@@ -30,7 +30,7 @@ class NotaAlunos {
         
         for(int x=0;x<20;x++)
         System.out.print("-");
-        System.out.println(" ");
+        System.out.print("\n");
         
         for(int c=0;c<n;c++)
         {
@@ -39,10 +39,10 @@ class NotaAlunos {
         
         for(int x=0;x<20;x++)
         System.out.print("-");
-        System.out.println(" ");
+        System.out.print("\n");
         
         
-        System.out.print("A media da turma e: "+soma/n);
+        System.out.print("Media da turma: "+soma/n);
     
     }
 }
