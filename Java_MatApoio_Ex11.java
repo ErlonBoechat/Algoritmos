@@ -17,7 +17,7 @@ class NotaAlunos {
         
         for(int x=0;x<20;x++)
         System.out.print("-");
-        System.out.println(" ");
+        System.out.print("\n");
         
         float nota[] = new float[n]; //precisa ser inicializado depois da atribuicao de valor a 'n'
         
