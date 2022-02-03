@@ -1,3 +1,8 @@
+/*
+Ler um numero de alunos n. Em seguida, ler as notas dos n alunos e imprimir, ao
+final, a media da turma. Faca uma solucao com for e outra solucao com while.
+SEGUNDA PARTE (com o comando while) ... */
+
 import java.util.Scanner;
 class NotaAlunos {
     public static void main(String[] args) {
@@ -15,6 +20,7 @@ class NotaAlunos {
         System.out.println(" ");
         
         float nota[] = new float[n]; //precisa ser inicializado depois da atribuicao de valor a 'n'
+      
         //substituindo o for por while:
         int c=0; //expr_inicializacao
         while(c<n) //expr_logica
