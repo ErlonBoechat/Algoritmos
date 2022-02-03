@@ -28,7 +28,7 @@ class NotaAlunos {
             System.out.print("\nDigite a nota do "+(c+1)+" aluno: ");
             nota[c] = read.nextFloat();
             soma+=nota[c];
-            c++;//incremento
+            c++;//expr_incremento
         }
         
         for(int x=0;x<20;x++)
