@@ -8,7 +8,7 @@ import java.util.Scanner;
 class NotaAlunos{
     public static void main(String[] arg){
         
-        float nota=0,total=0,min=0,max=0;
+        float nota=0,total=0,min=10,max=0;
         int c=0;
         
         Scanner s = new Scanner(System.in);
@@ -20,10 +20,9 @@ class NotaAlunos{
            c++;
            total+=nota;
            
-           if(nota>max)
-           {
-               max=nota;
-           }
+           if(nota>max) max=nota;
+           else if(nota>-1 && nota<min) min=nota;
+           
         }
         
         System.out.print("\n-------------------\n");
