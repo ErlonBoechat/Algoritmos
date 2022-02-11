@@ -6,22 +6,22 @@ dados obtidos via console.
 
 public class Livro {
     
-    private String Titulo;
+    private String Autor;
     private String Editora;
-    private int Paginas;
+    private float Preco;
 
-    public Livro(String Titulo, String Editora, int Paginas) {
-        this.Titulo = Titulo;
+    public Livro(String Autor, String Editora, float Preco) {
+        this.Autor = Autor;
         this.Editora = Editora;
-        this.Paginas = Paginas;
+        this.Preco = Preco;
     }
 
-    public String getTitulo() {
-        return Titulo;
+    public String getAutor() {
+        return Autor;
     }
 
-    public void setTitulo(String Titulo) {
-        this.Titulo = Titulo;
+    public void setAutor(String Autor) {
+        this.Autor = Autor;
     }
 
     public String getEditora() {
@@ -32,13 +32,14 @@ public class Livro {
         this.Editora = Editora;
     }
 
-    public int getPaginas() {
-        return Paginas;
+    public float getPreco() {
+        return Preco;
     }
 
-    public void setPaginas(int Paginas) {
-        this.Paginas = Paginas;
+    public void setPreco(float Preco) {
+        this.Preco = Preco;
     }
     
-    
+
+
 }
