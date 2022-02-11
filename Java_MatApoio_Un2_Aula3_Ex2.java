@@ -39,7 +39,4 @@ public class Livro {
     public void setPreco(float Preco) {
         this.Preco = Preco;
     }
-    
-
-
 }
