@@ -1,3 +1,9 @@
+/* Sabendo que todo livro possui autor, editora e preço, 
+crie uma classe pública com construtor padrão e métodos 
+modificadores e de acesso. Depois, crie dois livros com 
+dados obtidos via console.
+*/
+
 public class Livro {
     
     private String Titulo;
