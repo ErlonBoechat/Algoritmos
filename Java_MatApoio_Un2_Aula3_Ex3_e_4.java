@@ -1,3 +1,14 @@
+/*
+Adicione código ao exercício anterior e altere os dados 
+do 2º. livro da seguinte forma: autor para Harlan Coben, 
+editora Arqueiro e preço R$ 30,00
+
+Adicione código ao ex. 2 e compare os preços dos dois 
+livros, imprimindo o nome da editora do livro de menor 
+preço.
+
+*/
+
 public class LivroMain {
     public static void main(String[] args) {
        
