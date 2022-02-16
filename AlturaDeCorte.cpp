@@ -11,7 +11,7 @@ double contaMaioresQueH (double alts[], int tam, double altP);
 int main() {
 int num;
 double corte;
-double altura[1000]; //não consegui declarar uma variável 'num' no vetor, por isso criei um vetor com quantidade grande de elementos
+double altura[1000]; 
 cout<<"\nQtde de registros: ";
 cin>>num;
 cout<<"\nAltura de corte: ";
