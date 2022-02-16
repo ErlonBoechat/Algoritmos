@@ -3,8 +3,6 @@
 // altura mínima de corte, retornando a quantidade de atletas 
 // com a altura superior ou igual ao corte.
 
-// Algoritmo resolvido
-
 #include <iostream>
 using namespace std;
 
