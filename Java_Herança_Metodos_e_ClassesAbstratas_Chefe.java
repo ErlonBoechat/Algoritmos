@@ -1,4 +1,4 @@
-//Classe final Chefe, derivada de Empregado
+//Classe final Chefe, herdeira de Empregado
 
 public final class Chefe extends Empregado
 {
