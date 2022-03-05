@@ -11,12 +11,6 @@ System.out.print(t.x+" "+p.x); }
 }
 */
 
-package Teste_aula5;
-
-/**
- *
- * @author Erlon
- */
 public class Testando {
 
     /**
