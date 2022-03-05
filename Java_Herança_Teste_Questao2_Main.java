@@ -1,3 +1,16 @@
+/*
+Qual(is) saída(s) após a execução do código abaixo?
+class Primeira { int x = 20; void Calc(int aux1) { x*=aux1; } }
+class Segunda extends Primeira { void Calc(int aux2) { x+=aux2; } }
+class Terceira extends Segunda { String a = "Sistema de Informação"; }
+class Testando { public static void main(String[] args) {
+Terceira t = new Terceira();
+Primeira p = new Primeira();
+t.Calc(3);
+System.out.print(t.x+" "+p.x); }
+}
+*/
+
 package Teste_aula5;
 
 /**
