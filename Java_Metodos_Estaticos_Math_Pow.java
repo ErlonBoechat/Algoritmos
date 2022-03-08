@@ -1,5 +1,5 @@
 /*
-Para calcular qualquer tipo de potências, da forma: a^b
+Para calcular qualquer tipo de potência na forma: a^b
 onde a e b são do tipo double, usamos o método pow() da 
 classe Math
 -----------------------------------------------------------|
