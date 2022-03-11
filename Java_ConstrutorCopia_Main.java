@@ -1,3 +1,19 @@
+/*
+
+Tutorial Copy Constructor em Java
+https://lanera-austral.com/pt/how-to/496-java-tutorial-copy-constructor-in-java.html
+
+Na classe Employee, você encontrará a sintaxe de como 
+declarar o construtor de cópias. Criamos mais dois objetos 
+employee 4 e employee5, que são uma cópia de employee2 e 
+employee3, respectivamente. A partir da saída, é visível 
+que as variáveis de instância de employee4 têm o mesmo 
+valor que os valores das variáveis de instância de 
+employee2. O mesmo vale para employee5.
+
+
+*/
+
 package CopyConstructor;
 
 public class ConstructorDemo {
@@ -31,3 +47,35 @@ public class ConstructorDemo {
     }
     
 }
+
+/*
+Saída:
+
+Employee Details
+----------------
+Employee's Name: Platini
+Employee's Address: France
+Employee's Age: 45
+Employee's Salary: 120500.92
+----------------
+Employee's Name: John
+Employee's Address: Los Angles
+Employee's Age: 25
+Employee's Salary: 34503.92
+----------------
+Employee's Name: Platini
+Employee's Address: France
+Employee's Age: 45
+Employee's Salary: 120500.92
+----------------
+Employee's Name: John
+Employee's Address: Los Angles
+Employee's Age: 25
+Employee's Salary: 34503.92
+----------------
+Employee's Name: Platini
+Employee's Address: France
+Employee's Age: 45
+Employee's Salary: 120500.92
+
+*/
