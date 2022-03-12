@@ -64,7 +64,7 @@ public class Circulo {
        float distancia;
        
        if(outro.x-x<0)
-           distancia=outro.x-x*-1;
+           distancia=(outro.x-x)*-1;
        
        else
            distancia=outro.x-x;
