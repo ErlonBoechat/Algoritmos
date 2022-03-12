@@ -3,28 +3,17 @@ package DoisCirculos;
 public class Circulo {
     private float x;
     private float y;
-    private float r;
     
-    //construtor default
     Circulo()
     {
         x=7;
         y=3;
-        r=x-y;
     }
-    //construtor com parâmetros
+    
     Circulo(float pt, float ln)
     {
         x=pt;
         y=ln;
-        r=pt-ln;
-    }
-    //construtor cópia
-    Circulo(Circulo outro)
-    {
-        x = outro.x;
-        y = outro.y;
-        r = outro.x-outro.y;
     }
 
     public float getX() {
@@ -42,18 +31,35 @@ public class Circulo {
     public void setY(float y) {
         this.y = y;
     }
-
-    public float getR() {
-        return r;
-    }
-
-    public void setR(float r) {
-        this.r = r;
-    }
-
-    
-    float distancia(Circulo outroCirculo)
+     
+    float distancia(Circulo outro)
     {
-       return 0; 
+       float distancia;
+       
+       distancia=outro.x-y;
+       return distancia; 
+    }
+    
+    float calcularArea()
+            // fórmula: A = π r²
+    {
+        float area;
+        area = (float) (Math.PI*Math.pow(this.y, 2));
+        return area;   
+    }
+    
+    float calcularPerimetro()
+            // fórmula: C = 2 * π * r, onde: C = comprimento da circunferência ou perímetro.
+    {
+        float perimetro;
+        perimetro = (float) (2*Math.PI*this.y);
+        return perimetro;
+    }
+    
+    void imprimirDados()
+    {
+       System.out.println("Raio do circulo: " + this.getY());
+       System.out.println("Área do circulo: " + this.calcularArea());
+       System.out.println("Perímetro do circulo: " + this.calcularPerimetro());
     }
 }
