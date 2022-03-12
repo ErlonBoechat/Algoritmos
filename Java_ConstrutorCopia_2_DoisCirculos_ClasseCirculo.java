@@ -5,20 +5,21 @@ public class Circulo {
     private float y;
     private float r;
     
+    //construtor default
     Circulo()
     {
         x=7;
         y=3;
         r=x-y;
     }
-    
+    //construtor com parâmetros
     Circulo(float pt, float ln)
     {
         x=pt;
         y=ln;
         r=pt-ln;
     }
-    
+    //construtor cópia
     Circulo(Circulo outro)
     {
         x = outro.x;
