@@ -1,3 +1,30 @@
+/*
+1) Crie um projeto com duas classes : classe Circulo e 
+classe TestaCirculo (com a main), sabendo que todo círculo 
+tem um raio e um centro no ponto (x,y). Neste projeto ...
+
+a) crie dois círculos : um com valores constantes definidos 
+por você e outro com dados obtidos via console.
+
+b) implemente todos os sets e todos os gets
+
+c) use sobrecarga de construtores e crie cada círculo 
+(item a) com um construtor.
+
+d) calcule a distância de um círculo a outro. Para isso, 
+implemente um método float distancia(Circulo outroCirculo)
+que calcula a distância de um círculo a outro.
+
+e) calcule a área de cada círculo. Para isso, implemente 
+um método de nome calcularArea.
+
+f) calcule o perímetro de cada círculo. Para isso, 
+implemente um método de nome calcularPerimetro.
+
+g) imprima todos os dados de cada círculo. Para isso, 
+implemente um método de nome imprimirDados.
+*/
+
 package DoisCirculos;
 
 public class Circulo {
