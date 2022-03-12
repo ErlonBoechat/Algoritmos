@@ -13,7 +13,6 @@ public class TestaCirculo {
         b.imprimirDados();
         System.out.println("-----------------");
         System.out.println("Distância entre a e b: "+ a.distancia(b));
-        System.out.println("");
-    
+        System.out.println("");    
     }  
 }
