@@ -33,8 +33,8 @@ public class Circulo {
     
     Circulo()
     {
-        x=7;
-        y=3;
+        x=5;
+        y=12;
     }
     
     Circulo(float pt, float ln)
@@ -63,7 +63,12 @@ public class Circulo {
     {
        float distancia;
        
-       distancia=outro.x-y;
+       if(outro.x-x<0)
+           distancia=outro.x-x*-1;
+       
+       else
+           distancia=outro.x-x;
+       
        return distancia; 
     }
     
