@@ -6,7 +6,7 @@ tem um raio e um centro no ponto (x,y). Neste projeto ...
 a) crie dois círculos : um com valores constantes definidos 
 por você e outro com dados obtidos via console.
 
-b) implemente todos os métodos getters e setters. 
+b) implemente os métodos getters e setters. 
 
 c) use sobrecarga de construtores e crie cada círculo 
 (item a) com um construtor.
