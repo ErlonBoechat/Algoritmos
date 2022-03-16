@@ -1,3 +1,10 @@
+/*
+1) Escreva um programa em Java para ler as notas de uma 
+turma e imprimir a média da turma e as notas acima da 
+média. O programa deverá pedir, inicialmente, o total de 
+notas que serão lidas.
+*/
+
 import java.util.Scanner;
 public class Vetor {
    public static void main(String[] args) {
