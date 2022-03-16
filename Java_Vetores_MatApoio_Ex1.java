@@ -42,3 +42,25 @@ public class Vetor {
     }
   }
 }
+
+/*
+
+Saida: 
+
+Total de notas: 5
+----------------
+Digite a 1a nota: 7
+Digite a 2a nota: 5
+Digite a 3a nota: 9
+Digite a 4a nota: 8
+Digite a 5a nota: 5
+----------------
+Media das notas: 6.8
+----------------
+Notas acima da media:
+
+7.0
+9.0
+8.0
+
+*/
