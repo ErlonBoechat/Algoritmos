@@ -15,7 +15,6 @@ public class Vetor {
     Scanner tn = new Scanner(System.in);
     Scanner n = new Scanner(System.in);
    
-    
     System.out.print("Total de notas: ");
     tNotas = tn.nextInt();
     
