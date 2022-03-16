@@ -14,7 +14,7 @@ Public final class PorItem extends Empregado
    
    public void setProducao(double p)
    {
-      producao = (p > 0 ? p : 0.0);
+      producao = (p > 0 ? p : 0.0); //expressao condicional ternaria
     
    }
    
