@@ -16,7 +16,7 @@ public final class Comissao extends Empregado
 
    public void setSalario(double s) {
       
-      salario = (s > 0 ? s : 0.0);
+      salario = (s > 0 ? s : 0.0); //expressao condicional ternaria
    }
       
    public void setComissao(double c) {
