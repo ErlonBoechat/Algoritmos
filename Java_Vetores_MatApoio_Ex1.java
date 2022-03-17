@@ -15,6 +15,7 @@ public class Vetor {
     Scanner tn = new Scanner(System.in);
     Scanner n = new Scanner(System.in);
    
+    
     System.out.print("Total de notas: ");
     tNotas = tn.nextInt();
     
@@ -31,7 +32,7 @@ public class Vetor {
     System.out.println("----------------\n");
     media=soma/tNotas;
     
-    System.out.println("Media das notas: "+media);
+    System.out.println("Media das notas: "+media+"\n");
     System.out.println("----------------\n");
     System.out.println("Notas acima da media\n");
     
@@ -41,7 +42,6 @@ public class Vetor {
         System.out.println(notas[c]+"\n");
     }
   }
-}
 
 /*
 
