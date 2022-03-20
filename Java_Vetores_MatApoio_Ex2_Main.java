@@ -39,7 +39,7 @@ public class Client {
             {
                 System.out.println(" ");
                 System.out.println("codigo: "+a[c].getCodigo());
-                System.out.println("titulo: "+a[c].getTitulo());
+                System.out.println("titulo: "+a[c].getTitulo().toUpperCase());
                 System.out.println("preco: "+a[c].getPreco());
                 System.out.println("--------------------");
                 break;
@@ -100,22 +100,22 @@ Digite o valor: 100
 --------------------
  
 codigo: 1
-titulo: Guerra e Paz
+titulo: GUERRA E PAZ
 preco: 78.9
 --------------------
  
 codigo: 2
-titulo: Cem anos de Solidão
+titulo: CEM ANOS DE SOLIDÃO
 preco: 67.99
 --------------------
  
 codigo: 4
-titulo: O Ser e o Nada
+titulo: O SER E O NADA
 preco: 56.1
 --------------------
  
 codigo: 5
-titulo: A Mulher de Trinta Anos
+titulo: A MULHER DE TRINTA ANOS
 preco: 74.99
 --------------------
 
