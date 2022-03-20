@@ -1,10 +1,12 @@
 /*
+
 2) Escreva um programa em Java pra criar um vetor de livros, sabendo que cada livro
 possui código, autor, título, editora e preço. Após a criação dos livros, faça o que se pede:
 
 a) apresente todos os dados de todos os livros.
 b) apresente os preços e códigos dos livros de um determinado autor passado como parâmetro.
 c) apresente os códigos e títulos, em maiúsculas, dos livros que custam abaixo de um preço previamente obtido via console.
+
 */
 
 package VetorLivros;
@@ -28,7 +30,7 @@ public class Livro {
     public int getCodigo() {
         return codigo;
     }
-
+    
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
@@ -63,5 +65,10 @@ public class Livro {
 
     public void setPreco(float preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public String toString() {
+        return "{" + "codigo: " + codigo + "\nautor: " + autor + "\ntitulo: " + titulo + "\neditora: " + editora + "\npreco: " + preco +" "+'}';
     }
 }
