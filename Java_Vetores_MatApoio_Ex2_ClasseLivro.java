@@ -69,6 +69,6 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "{" + "codigo: " + codigo + "\nautor: " + autor + "\ntitulo: " + titulo + "\neditora: " + editora + "\npreco: " + preco +" "+'}';
+        return "* cod: " + codigo + "\nautor: " + autor + "\ntitulo: " + titulo + "\neditora: " + editora + "\npreco: R$ " + preco +" ";
     }
 }
