@@ -40,7 +40,7 @@ public class Client {
                 System.out.println(" ");
                 System.out.println("codigo: "+a[c].getCodigo());
                 System.out.println("titulo: "+a[c].getTitulo().toUpperCase());
-                System.out.println("preco: "+a[c].getPreco());
+                System.out.println("preco: R$ "+a[c].getPreco());
                 System.out.println("--------------------");
                 break;
             }
