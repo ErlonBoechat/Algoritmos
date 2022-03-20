@@ -35,16 +35,12 @@ public class Client {
        
         for(int c=0;c<5;c++)
         {
-            if(preco>a[c].getPreco())
+            while(a[c].getPreco()<preco)
             {
                 System.out.println(" ");
                 System.out.println("codigo: "+a[c].getCodigo());
                 System.out.println("titulo: "+a[c].getTitulo());
-                System.out.println("--------------------");
-            }
-            else
-            {
-                System.out.println("Nenhum livro encontrado.");
+                System.out.println("preco: "+a[c].getPreco());
                 System.out.println("--------------------");
                 break;
             }
