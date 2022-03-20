@@ -101,22 +101,22 @@ Digite o valor: 100
  
 codigo: 1
 titulo: GUERRA E PAZ
-preco: 78.9
+preco: R$ 78.9
 --------------------
  
 codigo: 2
 titulo: CEM ANOS DE SOLIDÃO
-preco: 67.99
+preco: R$ 67.99
 --------------------
  
 codigo: 4
 titulo: O SER E O NADA
-preco: 56.1
+preco: R$ 56.1
 --------------------
  
 codigo: 5
 titulo: A MULHER DE TRINTA ANOS
-preco: 74.99
+preco: R$ 74.99
 --------------------
 
 */
