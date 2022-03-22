@@ -17,9 +17,9 @@ class TesteEncapsulado {
 
       Encapsulado e = new Encapsulado(); // instância de Encapsulado
       
-     // e.comProtecao = 10; 
+     // e.comProtecao = 10; dá erro, Não é possível acessar o atributo diretamente
       
-      e.setComProtecao (10); //deve-se acessar o atributos de forma indireta, encapsulada
+      e.setComProtecao (10); //deve-se acessar de forma indireta, encapsulada
       
       System.out.println("Valor com protecao: " + e.getComProtecao ());
       
