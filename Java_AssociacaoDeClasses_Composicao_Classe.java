@@ -15,14 +15,15 @@ Ex.: uma conta tem um dono (cliente),
 */
 
 
-class Aleatorio {
+package PackComposicao;
+import java.util.Random;
 
-           int numero;
+public class Aleatorio {
+    
+     int numero;
 
-           Aleatorio(int max) {
+     Aleatorio(int max) {
 
-           numero = new Random().nextInt(max);
-
-           }
-
+        numero = new Random().nextInt(max);
+    }
 }
