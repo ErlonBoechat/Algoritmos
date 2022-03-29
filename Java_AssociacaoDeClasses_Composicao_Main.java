@@ -8,6 +8,6 @@ public class ComposicaoMain {
 
                      n = new NumeroAleatorio("Número secreto", 50);
                      
-                     System.out.println(n);
+                     System.out.println(n); // está imprimindo o endereço da variável
     }    
 }
