@@ -1,3 +1,25 @@
+/*
+
+1) Monte um projeto com as classes Carro e Motor, onde o 
+carro possui modelo (string) e um motor e o motor possui 
+uma cilindrada (float). Em seguida, implemente na classe
+Carro o método:
+
+              float velocidadeMaxima()
+
+que calcula a velocidade máxima do carro baseada na 
+cilindrada do motor:
+
+· Até 1.0: 140Km/k
+· Acima de 1.0 até 1.6: 180Km/h
+· Acima de 1.6 até 2.0: 220Km/h
+· Acima de 2.0: 260Km/h
+
+Por fim, crie instâncias da classe Carro com motores de 
+cilindradas iguais e diferentes.
+
+*/
+
 package CarroMotor;
 
 public class Main {
@@ -23,14 +45,6 @@ public class Main {
         n[3] = new Carro("Ford",m[2]);
         n[4] = new Carro("Chevrolet",m[1]);
         
-        /*
-        System.out.println(n[0].modelo +" "+ n[3].novo);
-        System.out.println(n[1].modelo +" "+ n[1].novo);
-        System.out.println(n[2].modelo +" "+ n[0].novo);
-        System.out.println(n[3].modelo +" "+ n[2].novo);
-        System.out.println(n[4].modelo +" "+ n[1].novo);
-        */
-        
         for(int x=0;x<5;x++)
         {
            System.out.println(n[x].toString());
@@ -39,3 +53,25 @@ public class Main {
         }
     }
 }   
+
+/*
+
+Saída: 
+
+Modelo = Mercedes, Cilindrada = CarroMotor.Motor@7a81197d
+Velocidade máxima: 260km/h
+-----------------
+Modelo = Volkswagen, Cilindrada = CarroMotor.Motor@36baf30c
+Velocidade máxima: 180km/h
+-----------------
+Modelo = Fiat, Cilindrada = CarroMotor.Motor@5ca881b5
+Velocidade máxima: 140km/h
+-----------------
+Modelo = Ford, Cilindrada = CarroMotor.Motor@4617c264
+Velocidade máxima: 220km/h
+-----------------
+Modelo = Chevrolet, Cilindrada = CarroMotor.Motor@36baf30c
+Velocidade máxima: 180km/h
+-----------------
+
+*/
