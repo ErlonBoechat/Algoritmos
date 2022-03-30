@@ -1,4 +1,5 @@
 
+
 package CarroMotor;
 
 public class Carro {
@@ -31,6 +32,6 @@ public class Carro {
 
     @Override
     public String toString() {
-        return "Modelo = " + modelo + ", Cilindrada = " + novo;
+        return "Modelo: " + modelo + " | Cilindrada: " + novo.cc;
     }
 }
