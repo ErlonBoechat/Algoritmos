@@ -47,10 +47,13 @@ public class Main {
         
         for(int x=0;x<5;x++)
         {
-           System.out.println(n[x].toString());
+            System.out.println("");
+            System.out.println(n[x].toString());
             System.out.print("Velocidade máxima: "); n[x].velocidadeMaxima(); 
-           System.out.println("-----------------");
+            System.out.println("------------------");
         }
+        
+        System.out.println("");
     }
 }   
 
@@ -58,20 +61,24 @@ public class Main {
 
 Saída: 
 
-Modelo = Mercedes, Cilindrada = CarroMotor.Motor@7a81197d
+Modelo: Mercedes | Cilindrada: 3.0
 Velocidade máxima: 260km/h
------------------
-Modelo = Volkswagen, Cilindrada = CarroMotor.Motor@36baf30c
+------------------
+
+Modelo: Volkswagen | Cilindrada: 1.6
 Velocidade máxima: 180km/h
------------------
-Modelo = Fiat, Cilindrada = CarroMotor.Motor@5ca881b5
+------------------
+
+Modelo: Fiat | Cilindrada: 1.0
 Velocidade máxima: 140km/h
------------------
-Modelo = Ford, Cilindrada = CarroMotor.Motor@4617c264
+------------------
+
+Modelo: Ford | Cilindrada: 2.0
 Velocidade máxima: 220km/h
------------------
-Modelo = Chevrolet, Cilindrada = CarroMotor.Motor@36baf30c
+------------------
+
+Modelo: Chevrolet | Cilindrada: 1.6
 Velocidade máxima: 180km/h
------------------
+------------------
 
 */
