@@ -1,45 +1,39 @@
 
 package TurmaAluno;
 
-import java.util.Arrays;
-
 public class Turma {
     
-    private Aluno StGroup[];
+    private int StAmount;
+    protected Aluno[] Student;
     
-    public Turma(Aluno a[])
+    public Turma(int n)
     {
-        this.StGroup=a;
-    }
-
-    public boolean add(Aluno a[]){
-        
-       for(int x=0;x<StGroup.length;x++)
-       {
-           if(a[x].getRegistration()!=this.StGroup[x].getRegistration()){
-               
-               this.StGroup[x]=a[x];
-               return true;
-           }
-        
-           else{
-               
-           }         
-       }
-       return true;
-    }
-
-    public Aluno[] getStGroup() {
-        return StGroup;
-    }
-
-    public void setStGroup(Aluno[] StGroup) {
-        this.StGroup = StGroup;
-    }
-
-    @Override
-    public String toString() {
-        return "Turma{" + "StGroup=" + Arrays.toString(StGroup) + '}';
-    }
+        this.Student = new Aluno[n];
+        this.StAmount=n;
+    }    
     
+    int x=0;
+    
+    public boolean add(Aluno a){    
+        
+        this.Student[x]=a;
+        x++;
+        return true;
+    }
+
+    public int getStAmount() {
+        return StAmount;
+    }
+
+    public void setStAmount(int StAmount) {
+        this.StAmount = StAmount;
+    }
+
+    public Aluno[] getStudent() {
+        return Student;
+    }
+
+    public void setStudent(Aluno[] Student) {
+        this.Student = Student;
+    }
 }
