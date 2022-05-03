@@ -1,7 +1,5 @@
 package exemplo;
-
 import java.awt.Component;
-
 import javax.swing.*;
 
 public class Janela  {
@@ -10,10 +8,6 @@ public class Janela  {
 
     public static void main(String[] args){
 
-            JOptionPane.showMessageDialog(
-
-            janela, "Cuidado com as Provas!","Linguagem de Programação",JOptionPane.WARNING_MESSAGE);
-
+            JOptionPane.showMessageDialog(janela, "Cuidado com as Provas!","Linguagem de Programação",JOptionPane.WARNING_MESSAGE);
     }
-
 }
