@@ -1,3 +1,8 @@
+/*
+-----------------------------------------------------------|
+------------------------------------------- MessageDialog
+*/
+
 package exemplo;
 import java.awt.Component;
 import javax.swing.*;
