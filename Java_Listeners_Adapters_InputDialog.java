@@ -1,3 +1,11 @@
+/*
+-----------------------------------------------------------|
+--------------------------------------------- InputDialog
+
+Exibe uma mensagem e obtém um valor de entrada do usuário.
+
+*/
+
 package exemplo;
 import java.awt.Component;
 import javax.swing.*;
