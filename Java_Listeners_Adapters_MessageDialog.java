@@ -1,6 +1,9 @@
 /*
 -----------------------------------------------------------|
 ------------------------------------------- MessageDialog
+
+Exibe uma mensagem e aguarda OK do usuário.
+
 */
 
 package exemplo;
