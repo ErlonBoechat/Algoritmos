@@ -7,9 +7,13 @@ public class SaidaDeDados {
 		System.out.print("Olá, Mundo!"); // o "print" não oferece quebra de linha
 		System.out.println("Olá, Mundo!");
 		
-		// variável de ponto flutuante	
-		float y,x = 3.67456467456f;		
-		System.out.printf("%.2f%n", x);
+		
+		// variável de ponto flutuante
+		
+		float x = 3.67456467475467456456f;
+		
+		System.out.printf("%.1f\n", x);//printf (format). "Porcento, ponto, 2f; porcento n (quebra de linha)"; variável que se quer imprimir
+		                 //padrão de máscara de formatação		
 
 	}
 }
