@@ -40,7 +40,7 @@ public class SaidaDeDados {
 		String nome = "Maria";
 		int idade = 31;
 		double renda = 40000.0;
-		System.out.printf("%s tem %d anos e ganha R$ %.2f reais%n",nome,idade,renda); // as variáveis precisa estar na ordem dos marcadores
+		System.out.printf("%s tem %d anos e ganha R$ %.2f reais%n",nome,idade,renda); // as variáveis precisam estar na ordem dos marcadores
 		
 		
 		/*
