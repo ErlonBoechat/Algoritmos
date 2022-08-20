@@ -22,6 +22,11 @@ public class SaidaDeDados {
 		System.out.printf("%.5f\n", x);
 		
 		
+		// concatenar város elementos em um mesmo comando de escrita
+		
+		System.out.println("");
+		System.out.printf("RESULTADO = %.2f metros\n", x);
+		
 		/*
 		
 		output:
@@ -32,6 +37,10 @@ public class SaidaDeDados {
                 3.675
                 3.6746
                 3.67456
+		
+		
+		
+		
 
                 */		
 
