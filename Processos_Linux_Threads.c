@@ -49,3 +49,33 @@ for (i=0; i<3; i++) { // Loop no qual o thread altera a variável global
 printf("Saindo do thread [%d]\n", id);
 
 }
+
+/*
+-----------------------------------------------------------|
+ Os valores das variáveis locais de cada thread não são 
+ influenciados pela execução dos demais threads. Porém, 
+ quando a variável “global” é modificada por um thread, 
+ esta alteração é vista imediatamente por todos os demais 
+ threads.
+
+Output:
+
+Iniciou thread [1]
+Iniciou thread [1]
+Thread principal aguardando demais threads terminarem.
+Thread [1] incrementou "global" parThread [1] incrementou "global" para 1.
+Thread [2] incrementou "global" para 2.
+Thread [2] incrementou "global" para 2.
+Iniciou thread [3]
+Thread [3] incrementou "global" para 3.
+Thread [1] incrementou "global" para 4.
+Thread [2] incrementou "global" para 5.
+Thread [3] incrementou "global" para 6.
+Thread [1] incrementou "global" para 7.
+Thread [2] incrementou "global" para 8.
+Thread [3] incrementou "global" para 9.
+Saindo do thread [1]
+Saindo do thread [2]
+Saindo do thread [3]
+Thread principal terminando.
+*/
