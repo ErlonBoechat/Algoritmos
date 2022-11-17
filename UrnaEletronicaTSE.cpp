@@ -87,7 +87,7 @@ void barra()
 void menu()
 {
 	cout<<"\n13 - Lula (PT)";
-	cout<<"\n39 - Bozo (PP)";
+	cout<<"\n39 - Bolsonaro (PL)";
 	cout<<"\n 1 - Branco";
 	cout<<"\n 2 - Nulo";
 	cout<<"\n";
