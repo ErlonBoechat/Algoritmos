@@ -1,9 +1,11 @@
 /* 
 
-============= TRIBUNAL SUPERIOR ELEITORAL (TSE) ===============
-========== NÚCLEO DE PROCESSAMENTO DE DADOS (NUPROD) ==========
+============= TRIBUNAL SUPERIOR ELEITORAL (TSE) 
+============= SUB-GERÊNCIA DE OPERACÕES ELEITORAIS (SOE/TSE) 
+============= NÚCLEO DE PROCESSAMENTO DE DADOS (NUPROD) 
 
 Source-code: urna elet. Mod. UE 2220
+Date: 2022
 
 */
 
