@@ -6,7 +6,7 @@
 
 Source-code: urna elet. Mod. UE 2220
 Date: 2022
-Dir. Téc. Benjamin Arrolla
+Dir. Téc. Eng.: Benjamin Arrolla
 
 */
 
