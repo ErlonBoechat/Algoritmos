@@ -1,15 +1,15 @@
-#include <iostream> 
-#include <locale> 
-using namespace std; 
-
 /* 
-======================= ELEIÇÕES 2022 =========================
+
 ============= TRIBUNAL SUPERIOR ELEITORAL (TSE) ===============
 ========== NÚCLEO DE PROCESSAMENTO DE DADOS (NUPROD) ==========
 
-Código-fonte: urna elet. Mod. UE 2220
+Source-code: urna elet. Mod. UE 2220
 
 */
+
+#include <iostream> 
+#include <locale> 
+using namespace std; 
 
 void barra();
 void menu();
