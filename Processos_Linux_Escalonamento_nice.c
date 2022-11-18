@@ -1,3 +1,9 @@
+/*
+O algoritmo será rodado em paralelo com a sua versão 2 (upload seguinte) a partir de dois scripts sh no Linux para que seja
+acompanhado o peso de cada algoritmo na UCP e para que, com o segundo script sh, seja definido O nice 5 (acréscimo de
+5 em sua prioridade).
+*/
+
 #include <stdio.h>
 #include <math.h>
 #include <limits.h>
