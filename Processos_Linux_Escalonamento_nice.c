@@ -1,7 +1,7 @@
 /*
 O algoritmo será rodado em paralelo com a sua versão 2 (upload seguinte) a partir de dois scripts sh no Linux para que seja
 acompanhado o peso de cada algoritmo na UCP e para que, com o segundo script, seja definido o nice 5 para o algoritmo 2 (acréscimo de
-5 em sua prioridade).
+5 em sua prioridade). Conferir as diferenças no uso da UCP entre os dois processos com o programa 'top'. 
 */
 
 #include <stdio.h>
