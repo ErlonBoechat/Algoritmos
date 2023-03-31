@@ -17,7 +17,7 @@ imprimirá sempre a mesma saída, independente da exceção,
 dizendo que é necessário o uso de inteiros 
 (mesmo quando a exceção for causada pela divisão 
 por zero) exatamente porque temos um mecanismo
-de tratamento usando uma classe genérica (Exception) para 
+de tratamento usando um tipo genérico (Exception) para 
 lidar, neste caso, com dois tipos possíveis de exceção.
 -----------------------------------------------------------|
 */
