@@ -53,9 +53,7 @@ public class DivideByZeroWithExceptionHandling {
       }
    }
 }
-
 /*
-
 -----------------------------------------------------------|
 Este é um exemplo de um programa Java que lida com exceções 
 de divisão por zero. O programa solicita ao usuário que 
