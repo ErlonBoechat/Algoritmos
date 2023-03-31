@@ -1,3 +1,24 @@
+/*
+-----------------------------------------------------------|
+A declaração da classe genérica ''Exception' para tratamento 
+de exceções mostra que a declaração de exceções específicas, 
+como no código anterior (Java_Tratamento_Excecoes.java), 
+permite tratar de modo adequado diferentes tipos de exeções. 
+
+Neste código, ao entrarmos com valores que não sejam 
+inteiros ou com zero para o divisor, as exceções 
+InputMismatchException e ArithmeticException são tratadas 
+por um único mecanismo try-catch, que vai dar resposta 
+adequada de acordo com a exceção, mas não permitirá um 
+tratamento individual da exceção pelo programador. 
+
+Note que o 'System.out.printf' do catch Exception 
+imprimirá sempre a mesma saída, independente da exceção, 
+dizendo que é necessário o uso de inteiros 
+(mesmo quando a exceção for causada pela divisão 
+por zero).
+-----------------------------------------------------------|
+*/
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
