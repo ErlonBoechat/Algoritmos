@@ -18,7 +18,7 @@ dizendo que é necessário o uso de inteiros
 (mesmo quando a exceção for causada pela divisão 
 por zero) exatamente porque temos um mecanismo
 de tratamento usando uma classe genérica (Exception) para 
-lidar com mais de um tipo de exceção.
+lidar, neste caso, com dois tipos possíveis de exceção.
 -----------------------------------------------------------|
 */
 import java.util.InputMismatchException;
