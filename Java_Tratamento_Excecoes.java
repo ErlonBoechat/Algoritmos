@@ -40,15 +40,17 @@ public class DivideByZeroWithExceptionHandling {
                System.err.printf("%nException: %s%n", inputMismatchException);
                scanner.nextLine(); // descarta a entrada para o usuário tentar de novo
                System.out.printf("You must enter integers. Please try again.%n%n");
+               inputMismatchException.printStackTrace(); // acessar pilha de chamadas do objeto de exceção (inputMismatchException)
                line();
                    
             } catch (ArithmeticException arithmeticException) {
                   
                System.err.printf("%nException: %s%n", arithmeticException);
                System.out.printf("Zero is an invalid denominator. Please try again.%n%n");
+               arithmeticException.printStackTrace();
                line();                
             }
-             
+            
          } while(continueLoop);  
       }
    }
