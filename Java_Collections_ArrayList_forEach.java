@@ -23,3 +23,16 @@ public class Exemplo021 {
 		System.out.println();
 	}
 }
+
+/*
+Output:
+
+Primeiro colocado
+Segundo colocado
+Terceiro colocado
+
+Primeiro colocado
+Segundo colocado
+Terceiro colocado
+
+*/	
