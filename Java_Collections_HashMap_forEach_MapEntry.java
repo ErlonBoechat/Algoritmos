@@ -57,3 +57,58 @@ public class Exemplo022 {
 			} while(opcao!=0); teclado.close(); // Fechar o Scanner quando terminar		    
 	}
 }
+
+/*
+Output:
+
+Digite 1 para incluir, 2 para consultar, 3 para listar, 0 para sair
+1
+Codigo do novo produto:
+12
+Nome do novo produto:
+Banana
+
+Digite 1 para incluir, 2 para consultar, 3 para listar, 0 para sair
+1
+Codigo do novo produto:
+13
+Nome do novo produto:
+Goiaba
+
+Digite 1 para incluir, 2 para consultar, 3 para listar, 0 para sair
+1
+Codigo do novo produto:
+14
+Nome do novo produto:
+Peixe
+
+Digite 1 para incluir, 2 para consultar, 3 para listar, 0 para sair
+1
+Codigo do novo produto:
+15
+Nome do novo produto:
+Mostarda
+
+Digite 1 para incluir, 2 para consultar, 3 para listar, 0 para sair
+1
+Codigo do novo produto:
+16
+Nome do novo produto:
+Vinagre
+
+Digite 1 para incluir, 2 para consultar, 3 para listar, 0 para sair
+2
+Digite o codigo
+14
+Peixe
+
+Digite 1 para incluir, 2 para consultar, 3 para listar, 0 para sair
+3
+16=Vinagre
+12=Banana
+13=Goiaba
+14=Peixe
+15=Mostarda
+
+Digite 1 para incluir, 2 para consultar, 3 para listar, 0 para sair
+*/
