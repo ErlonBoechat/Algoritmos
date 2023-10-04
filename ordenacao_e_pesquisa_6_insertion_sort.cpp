@@ -20,16 +20,13 @@ cout<<"\n\n";
 system("pause");
 }
 
-void insercao(int vet[], int tam)
-{
+void insercao(int vet[], int tam) {
   int i,j, aux;
-  for (i=1;i<tam;i++)
-  {
-    aux = vet[i];
-    for(j=i; j>0 && aux <vet[j-1];j--)
-
-      vet[j]=vet[j-1];
-      vet[j]=aux;  
+  for (i=1;i<tam;i++) {
+     aux = vet[i];
+        for(j=i; j>0 && aux <vet[j-1];j--)
+           vet[j]=vet[j-1];
+     vet[j]=aux;  
    }
 }
 
