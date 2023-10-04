@@ -32,3 +32,15 @@ void insercao(int vet[], int tam)
       vet[j]=aux;  
    }
 }
+
+/*
+Output:
+
+Antes da chamada da funcao:
+		13	23	3	8	1	
+
+
+Depois da chamada da funcao:
+		1	3	8	13	23	
+*/
+ 
