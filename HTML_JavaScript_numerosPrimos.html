@@ -1,37 +1,19 @@
 <!DOCTYPE html>
-
-   <html>
-
-      <body>
-
-         <ul>
-
-            <script>
-
-               for(i=1 ; i<=50 ; i++){
-
-                  primo = true;
-
-                     for(j=2 ; j<i ; j++)
-
-                        if( i%j==0 ){
-
-                           primo = false;
-
-                           break;
-
-                }
-
-                       if(primo)
-
-                         document.writeln("<li>"+i+"</li>");
-
-               }
-
+<html>
+<body> 
+<ul>
+<script>
+for(i=1 ; i<=50 ; i++){
+primo = true;
+for(j=2 ; j<i ; j++)
+if( i%j==0 ){
+primo = false;
+break;
+}
+if(primo)
+document.writeln("<li>"+i+"</li>");
+}
 </script>
-
 </ul>
-
 </body>
-
 </html>
