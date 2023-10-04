@@ -51,7 +51,7 @@ public class Exemplo022 {
 			    } catch(Exception e) {
 			    	System.out.println("Ops! Formato incorreto");
 			    	opcao=-1;
-                    teclado.next(); // Consumir a entrada errônea
+                                teclado.next(); // Consumir a entrada errônea
 			    }	
 
 			} while(opcao!=0); teclado.close(); // Fechar o Scanner quando terminar		    
