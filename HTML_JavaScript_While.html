@@ -10,12 +10,13 @@
 var a=1;
 while(a<10){
    document.writeln("<tr><td>"+a+"</td>");
-   fat = b = a;
-   while(--b>=1){
+   fat = 1;
+   while(b>1){
       fat*=b;
-      document.writeln("<td>"+a+"</td></tr>");
-      a++;
+      document.writeln("<td>"+fat+"</td></tr>");
+      b--;
    }
+   a++;
 }
 </script>
 </table>
