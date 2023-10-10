@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color:blue;color:white;font-style:bold;}
+</style>
+</head>
+<body>
+<form action="//servidor/app.asmx" method="get">
+Nome: <input name="N1" type="text" /><br /><br />
+Opções de envio:<br />
+<input type="checkbox" name="OPT1" value="Revista" />
+Revista mensal
+<input type="checkbox" name="OPT2" value="Digital" />
+Versão digital
+<input type="checkbox" name="OPT3" value="SMS" />
+Mensagem SMS<br /><br />
+<input type="submit" value="Cadastrar" />
+</form>
+<script>
+var objNome = document.getElementById("N1");
+var objOpt1 = document.getElementById("OPT1");
+var objOpt2 = document.getElementById("OPT2");
+var objOpt3 = document.getElementById("OPT3");
+
+function validar(){
+    
+    if(objNome.value==""){ 
+       alert("Nome deve ser preenchido");
+       objNome.focus();
+       return false; 
+    }
+
+    if(!objOpt1.checked && !objOpt2.checked && !objOpt3.checked) { 
+       alert("Select ao menos uma opção");
+       return false; 
+    }
+    return true; 
+}
+
+</script>
+</body>
+</html>
