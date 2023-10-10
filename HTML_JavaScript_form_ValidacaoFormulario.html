@@ -4,6 +4,9 @@
 A função deste evento é diminuir o fluxo de informações ao servidor, fazendo com que uma validação inicial aconteça no próprio javascript.
 O onsubmit é diferente do onclick (que apenas chama uma função), pois exige o retorno verdadeiro ou falso de uma função (ex: "return validar();"). 
 
+Quando criamos um sistema de validação para nossos formulários, além de fornecer uma interface mais robusta, diminuímos o número de 
+chamadas inválidas ao servidor e, consequentemente, o fluxo de rede.
+
 Se a função chamada por onclick retornar verdadeiro, será permitido que seja enviada ao servidor.
 
 Se retornar falso, o seu envio será impedido.
