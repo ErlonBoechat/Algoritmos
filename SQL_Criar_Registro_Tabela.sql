@@ -1,0 +1,2 @@
+INSERT INTO Curso(ID_Curso,NOME_CURSO,COORDENADOR)
+VALUES(1,"Engenharia","Alberto")
