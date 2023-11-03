@@ -1,3 +1,10 @@
+/*
+Podemos acompanhar, nesse código, os quatro passos citados para a conexão e utilização 
+do banco de dados, e, após a recepção dos dados da consulta no ResultSet, podemos nos 
+movimentar pelos registros, acessando cada campo pelo nome, sempre lembrando de utilizar 
+o método correto para o tipo.
+*/
+
 package javabancodedados;
 
 import java.sql.Connection;
@@ -31,3 +38,16 @@ public class JavaBancoDeDados {
         c1.close();
     }
 }
+
+/*
+Output:
+
+run:
+Produto 1: banana :: 1000
+Produto 2: morango :: 150
+Produto 3: laranja :: 400
+Produto 4: tomate :: 50
+Produto 5: cebola :: 200
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+*/
