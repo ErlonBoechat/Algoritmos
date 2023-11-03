@@ -3,6 +3,17 @@ Podemos acompanhar nesse código os quatro passos citados para a conexão e util
 do banco de dados, e, após a recepção dos dados da consulta no ResultSet, podemos nos 
 movimentar pelos registros, acessando cada campo pelo nome, sempre lembrando de utilizar 
 o método correto para o tipo.
+
+Quatro passos:
+
+1 - instanciar a classe do driver de conexão
+
+2 - obter uma conexão (Connection) a partir da Connection String, usuário e senha
+
+3 - instanciar um executor de SQL (Statement)
+
+4 - executar os comandos DML 
+
 */
 
 package javabancodedados;
