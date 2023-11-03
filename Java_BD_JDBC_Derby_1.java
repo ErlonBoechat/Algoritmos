@@ -1,6 +1,6 @@
 /*
 Podemos acompanhar nesse código os quatro passos citados para a conexão e utilização 
-do banco de dados, e, após a recepção dos dados da consulta no ResultSet, podemos nos 
+do banco de dados e, após a recepção dos dados da consulta no ResultSet, podemos nos 
 movimentar pelos registros, acessando cada campo pelo nome, sempre lembrando de utilizar 
 o método correto para o tipo.
 
