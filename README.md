@@ -1,2 +1,2 @@
 # Algoritmos
-Códigos e algoritmos de estudo e aprendizado durante curso de Análise e Desenvolvimento de Sistemas 
+Códigos e algoritmos de estudo usados durante minha graduação em ADS 
