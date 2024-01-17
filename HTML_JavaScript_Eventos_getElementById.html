@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de getElementById</title>
+</head>
+<body>
+
+    <p id="texto_escondido">Este é um parágrafo com id "texto_escondido".</p>
+
+    <script>
+        // Utilizando getElementById para obter uma referência ao elemento com id "texto_escondido"
+        var eP = document.getElementById("texto_escondido");
+
+        // Agora eP contém uma referência ao elemento encontrado
+        console.log(eP.textContent); // Saída: Este é um parágrafo com id "texto_escondido".
+    </script>
+
+</body>
+</html>
