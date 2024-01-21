@@ -1,3 +1,11 @@
+<! --
+
+Se eu precisasse calcular o clique em cada item individualmente, por exemplo: uma 
+variável que armazene a quantidade de cliques no Item 1 e atualize essa quantidade 
+a cada clique. Como eu conseguiria representar isso no console? 
+
+-->
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -15,20 +23,22 @@ src="https://code.jquery.com/jquery-3.6.4.js"></script>
 <li>Item 5</li>
 </ul>
 <script type="text/javascript">
-
+// Objeto para armazenar contagem de cliques por item
 var contagemCliquesPorItem = {};
 
 
 $('ul li').click(function () {
-
+    // Obtém o conteúdo do item da lista
     var conteudoItem = $(this).text();
-
+   
+    // Inicializa a contagem se ainda não existir
     if (!contagemCliquesPorItem[conteudoItem]) {
         contagemCliquesPorItem[conteudoItem] = 0;
     }
-
+    // Incrementa a contagem para o item clicado
     contagemCliquesPorItem[conteudoItem]++;
-
+ 
+    // Exibe o conteúdo do item da lista e a contagem de cliques no console
     console.log(`Conteúdo do item da lista "${conteudoItem}": Cliques - ${contagemCliquesPorItem[conteudoItem]}`);
 });
 
@@ -37,3 +47,102 @@ $('ul').append('<li>Item 6</li>');
 </script>
 </body>
 </html>
+
+<!-- 
+
+Console:
+
+Conteúdo do item da lista "Item 1": Cliques - 1
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 2
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 3
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 4
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 1
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 2
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 1
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 4": Cliques - 1
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 1
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 2
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 3
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 4
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 5
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 6
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 7
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 8
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 9
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 10
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 11
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 12
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 13
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 14
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 15
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 2
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 3
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 3
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 4
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 5
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 6
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 7
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 8
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 9
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 10
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 4": Cliques - 2
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 16
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 17
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 4": Cliques - 3
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 4
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 5
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 6
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 7
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 8
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 9
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 10
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 11
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 12
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 4": Cliques - 4
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 18
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 19
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 4": Cliques - 5
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 4": Cliques - 6
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 11
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 13
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 14
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 15
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 16
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 17
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 5
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 6
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 7
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 8
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 9
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 10
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 11
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 12
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 13
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 14
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 15
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 16
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 17
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 18
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 19
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 20
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 21
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 22
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 23
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 24
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 25
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 26
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 27
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 28
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 29
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 1": Cliques - 30
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 18
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 12
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 4": Cliques - 7
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 5": Cliques - 20
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 4": Cliques - 8
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 13
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 4": Cliques - 9
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 3": Cliques - 14
+HTML_JavaScript_jQuery_Eventos_click()_on().html:32 Conteúdo do item da lista "Item 2": Cliques - 19
+
+-->
