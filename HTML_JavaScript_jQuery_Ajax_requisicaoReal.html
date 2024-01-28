@@ -1,3 +1,25 @@
+<!--
+
+Neste código é realizada uma requisição AJAX, utilizando o método HTTP POST.
+
+- A URL para a qual a requisição foi submetida pertence a um serviço on-line 
+  que pode responder a diversos tipos de requisição. Em nosso caso, foi criado 
+  um recurso que, em seguida, foi devolvido como resposta à solicitação.
+
+- O atributo “data” foi utilizado para enviar dados para a URL requisitada. 
+  Foram passados uma string, name, e um array, movies.
+
+- Os dados recebidos em resposta à requisição vieram no formato JSON, sendo 
+  armazenados na variável msg. Esses resultados foram acessados por meio da 
+  notação de objetos – “objeto.atributo” e concatenados para serem inseridos 
+  dentro da <div> onde foram exibidos na página.
+
+- Entre os dados retornados, merece destaque o atributo “movies”, por se tratar 
+  de um array. Note no código que há dois métodos, tendo um permanecido comentado, 
+  para tratar esse tipo de estrutura: o $.map e o $.each.
+
+-->
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
