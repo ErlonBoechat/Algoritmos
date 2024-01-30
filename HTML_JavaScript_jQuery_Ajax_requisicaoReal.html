@@ -47,13 +47,11 @@ name: "Jose Maria",
 movies: ["Sem igual", "Incomparável"]
 },
 
-beforeSend: function () {
-//A função beforeSend é chamada antes da requisição ser submetida.
-//Dependendo da velocidade do retorno da requisição, a msg abaixo pode não chegar
-// a ser exibida
+beforeSend: function () { //A função beforeSend é chamada antes da requisição ser submetida.
+//Dependendo da velocidade do retorno da requisição, a msg abaixo pode não ser exibida
 $("#resultado").html("Carregando...");
 }
-})
+}) // fechamento da requisição AJAX
 
 .done(function (msg) { // o método .done() é chamado quando a requisição AJAX é bem-sucedida
 // ele recebe a resposta da requisição como um argumento '(msg)'
