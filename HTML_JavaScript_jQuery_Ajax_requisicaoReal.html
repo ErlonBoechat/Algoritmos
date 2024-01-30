@@ -38,11 +38,11 @@ Neste código é realizada uma requisição AJAX, utilizando o método HTTP POST
 <script type="text/javascript">
 
 //Click do link
-$('#lnk').click(function () {
-$.ajax({
-url: "https://reqres.in/api/users",
-type: 'post',
-data: {
+$('#lnk').click(function () { // abertura do manipulador de eventos de clique para o elemento de ID 'lnk'
+$.ajax({ // requisição AJAX é feita usando $.ajax()
+url: "https://reqres.in/api/users", // URL de requisição
+type: 'post', // tipo de requisição (POST)
+data: { // dados enviados na requisição AJAX
 name: "Jose Maria",
 movies: ["Sem igual", "Incomparável"]
 },
@@ -55,27 +55,31 @@ $("#resultado").html("Carregando...");
 }
 })
 
-.done(function (msg) {
-//Em caso de sucesso, mostrar na div #resultado o retorno da requisição
-console.log('Retorno: ' + JSON.stringify(msg));
-console.dir(msg);
+.done(function (msg) { // o método .done() é chamado quando a requisição AJAX é bem-sucedida
+// ele recebe a resposta da requisição como um argumento '(msg)'
+console.log('Retorno: ' + JSON.stringify(msg)); // a resposta é registrada no console. JSON.stringify(msg) converte o objeto de resposta em uma string JSON para facilitar a exibição no console.
+console.dir(msg); 
 
-//Assim como o método $.each, esse método percorre um array
+//Assim como o método $.each, esse método tbm percorre um array 
 $.map(msg["movies[]"] , function( val, i ) {
 console.log(val);
 });
 
-var content = '';
-$.each(msg["movies[]"], function (index, value) {
+var content = ''; // a variável 'content' é criada como uma string vazia (='') para acumular os valores que serão exibidos na <div> "#resultado"
+  
+// quando utilizamos a função $.each() em jQuery para iterar sobre elementos de uma coleção, como um array ou uma string (content), efetivamente estamos realizando um loop.  
+$.each(msg["movies[]"], function (index, value) { // assinatura básica (padrão) da função de retorno de chamada dentro de '$.each()' - (índice atual do elemento e valor desse elemento) 
 content += value + ' - ';
 });
+  
 $("#resultado").html('Nome: ' + msg.name + '<br/>' + 'Filmes: ' + content + '<br/>' + 'Id: ' + msg.id + '<br/>' + 'Data de Criação: ' + msg.createdAt);
 })
+
 .fail(function (jqXHR, textStatus, msg) {
 //Em caso de fracasso, mostrar no console a mensagem de erro retornada
 console.log('A requisição falhou e retornou a seguinte mensagem: ' + msg);
 });
-});
+}); // fechamento do manipulador de eventos de clique para o elemento de ID 'lnk'
 </script>
 </body>
 </html>
