@@ -40,13 +40,14 @@ Neste código é realizada uma requisição AJAX, utilizando o método HTTP POST
 //Click do link
 $('#lnk').click(function () { // abertura do manipulador de eventos de clique para o elemento de ID 'lnk'
 $.ajax({ // requisição AJAX é feita usando $.ajax()
-url: "https://reqres.in/api/users", // URL de requisição
+url: "https://reqres.in/api/users", // URL para onde a requisição será submetida
 type: 'post', // tipo de requisição (POST)
-data: { // dados enviados na requisição AJAX
+data: { // dados enviados na requisição AJAX para a URL requisitada. Estão sendo passados uma string 'name' e um array 'movies'
 name: "Jose Maria",
 movies: ["Sem igual", "Incomparável"]
 },
-
+// Os dados recebidos em resposta à requisição virão no formato JSON, sendo armazenados, por padrão, na variável "msg"
+  
 beforeSend: function () { //A função beforeSend é chamada antes da requisição ser submetida. Dependendo da velocidade do retorno da requisição, a msg abaixo pode não ser exibida
 $("#resultado").html("Carregando...");
 }
