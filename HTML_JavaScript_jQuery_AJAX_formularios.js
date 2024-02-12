@@ -1,4 +1,6 @@
 //Carrega os dados do arquivo json e os exibe no carregamento da página
+
+
 carregaDadosJson();
 
 function carregaDadosJson(){
@@ -25,16 +27,40 @@ function carregaDadosJson(){
         console.log('A requisição falhou e retornou com a seguinte mensagem: ' + msg);
     });
 }
-	
-//Funções de Filtros
 
-//#1 Clique no checkbox - Fabricante
-$( "form input:radio" ).click(function(ck){
+// Filtros
+
+//#1 Checkbox - Fabricante
+
+$("form input:radio").click(function(ck){
     if($(this).prop("checked") == true)
         filtrarDados('Fabricante', $(this).val())
 });
 
+
+/*
+$(document).ready(function() {
+    // Capturando o clique no link com o atributo onclick definido como carregaDadosJson()
+    $('a[onclick="carregaDadosJson()"]').click(function() {
+        // Desmarcar todos os checkboxes
+        $('input[type="checkbox"]').prop("checked",false);
+    });
+});
+*/
+
+ // Ação para limpar as seleções
+ $(document).ready(function() {
+    $('#limpar').click(function() {
+        $('input[type="radio"]').prop("checked", false);
+        $('#modelo').val('');
+        $('#ano_de').val('');
+        $('#ano_ate').val('');
+        carregaDadosJson(); // Recarrega os dados após limpar
+    });
+});
+
 //#2 Digitação no input - Modelo
+
 $('#modelo').keyup(function () {
     var modelo = $(this).val();
     if (modelo.length > 0) {
@@ -46,6 +72,7 @@ $('#modelo').keyup(function () {
 });
 
 //#3 Filtro por ano
+
 function filtrarPorAno(){
     var ano_de  = $('#ano_de').val();
     var ano_ate = $('#ano_ate').val();
@@ -59,6 +86,7 @@ function filtrarPorAno(){
     }
 	
     //Filtrando os dados se apenas o ano 'a partir de' for inserido
+
     if(ano_de.length > 0 && ano_ate.length == 0){
 		
         $('#veiculos td.col_ano').filter(function () {
@@ -72,6 +100,7 @@ function filtrarPorAno(){
     }
 	
     //Filtrando os dados se apenas o ano 'até' for inserido
+
     if(ano_ate.length > 0 && ano_de.length == 0){
 		
         $('#veiculos td.col_ano').filter(function () {
@@ -85,6 +114,7 @@ function filtrarPorAno(){
     }
 	
     //Filtrando os dados se os anos 'a partir de' e 'até' forem inseridos
+
     if(ano_de.length > 0 && ano_ate.length > 0){
 		
         $('#veiculos td.col_ano').filter(function () {
