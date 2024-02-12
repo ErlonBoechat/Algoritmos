@@ -5,7 +5,7 @@ function carregaDadosJson(){
 
     $.ajax({
         dataType : "json",
-        url : "json_data.json",
+        url : "HTML_JavaScript_jQuery_AJAX_formularios.json",
         beforeSend : function(){
             $("#resultado").html("Carregando...");
         }
@@ -24,10 +24,10 @@ function carregaDadosJson(){
         //Em caso de fracasso, mostrar no console a mensagem de erro retornada
         console.log('A requisição falhou e retornou com a seguinte mensagem: ' + msg);
     });
-
 }
 	
 //Funções de Filtros
+
 //#1 Clique no checkbox - Fabricante
 $( "form input:radio" ).click(function(ck){
     if($(this).prop("checked") == true)
@@ -45,6 +45,7 @@ $('#modelo').keyup(function () {
     }
 });
 
+//#3 Filtro por ano
 function filtrarPorAno(){
     var ano_de  = $('#ano_de').val();
     var ano_ate = $('#ano_ate').val();
