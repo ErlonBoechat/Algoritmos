@@ -1,6 +1,5 @@
 //Carrega os dados do arquivo json e os exibe no carregamento da página
 
-
 carregaDadosJson();
 
 function carregaDadosJson(){
@@ -96,7 +95,6 @@ function filtrarPorAno(){
         $('#veiculos td.col_ano').filter(function () {
             return $(this).text() == ano_de || $(this).text() >= ano_de;
         }).parent().show();
-
     }
 	
     //Filtrando os dados se apenas o ano 'até' for inserido
@@ -110,7 +108,6 @@ function filtrarPorAno(){
         $('#veiculos td.col_ano').filter(function () {
             return $(this).text() == ano_ate || $(this).text() <= ano_ate;
         }).parent().show();
-
     }
 	
     //Filtrando os dados se os anos 'a partir de' e 'até' forem inseridos
@@ -124,9 +121,7 @@ function filtrarPorAno(){
         $('#veiculos td.col_ano').filter(function () {
             return $(this).text() >= ano_de && $(this).text() <= ano_ate;
         }).parent().show();
-
-    }
-	
+    }	
 }
 
 function filtrarDados(target, value){
