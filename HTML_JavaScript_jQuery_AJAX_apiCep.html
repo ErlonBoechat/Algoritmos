@@ -21,7 +21,7 @@
                 var cep = $('#cep').val();
 
                 $.ajax({
-                    url: `https://viacep.com.br/ws/${cep}/json/`,
+                    url: `https://viacep.com.br/ws/${cep}/json/`, // funcionalidade javascript (ñ jQuery); é possível concatenar o valor de uma variável (cep) ao valor de uma string usando sinais de crase (``) 
                     type: 'get'
                 })
                 .done(function(result){
