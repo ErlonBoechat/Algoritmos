@@ -28,7 +28,7 @@
                 })
                 .done(function(result){
                     console.log(JSON.stringify(result));
-                    $('#result').append(`CEP: ${result.cep}<br />Logradouro: ${result.logradouro}`);
+                    $('#result').append(`CEP: ${result.cep}<br />Logradouro: ${result.logradouro}<br /><br />`);
                 })
 
                 .fail(function(xhr,txtStatus,msg){
