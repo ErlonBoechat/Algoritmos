@@ -29,8 +29,22 @@ Siga o seguinte roteiro:
          type: 'get'        
       })
       .done(function(result){
+
+         var table = "<table>";
+
+            table += '<tr><td>ID</td><td>E-mail</td><td>Nome</td><td>Avatar</td></tr>';
+
+            $.map(result,function(val,i){
+
+               table += '<tr>'+'<td>'+val.id+'</td>'+'<td>'+val.email+'</td>'+'<td>'+val.first_name+'</td>'+'<td>'+val.avatar+'</td>'+'</tr>';
+
+            })
+
+            table += "</table>";
+
          console.log(JSON.stringify(result)); 
-         //$('#result').append();
+         $('#result').html("");
+         $('#result').append(table);
       })
       .fail(function(xhr,txtStatus,msg){
          console.log('Ocorreu um erro: ' + msg);
