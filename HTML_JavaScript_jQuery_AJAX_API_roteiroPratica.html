@@ -28,27 +28,41 @@ Siga o seguinte roteiro:
          url: `https://reqres.in/api/users?page=1`,   
          type: 'get'        
       })
-      .done(function(result){
+      .done(function(msg){
 
-         var table = "<table>";
+         var table = '<table>';
 
             table += '<tr><td>ID</td><td>E-mail</td><td>Nome</td><td>Avatar</td></tr>';
 
-            $.map(result,function(val,i){
+            $.map(msg.data,function(val,i){
 
                table += '<tr>'+'<td>'+val.id+'</td>'+'<td>'+val.email+'</td>'+'<td>'+val.first_name+'</td>'+'<td>'+val.avatar+'</td>'+'</tr>';
 
-            })
+            });
 
-            table += "</table>";
+            table += '</table>';
 
-         console.log(JSON.stringify(result)); 
+         console.log(JSON.stringify(msg)); 
          $('#result').html("");
          $('#result').append(table);
       })
       .fail(function(xhr,txtStatus,msg){
          console.log('Ocorreu um erro: ' + msg);
-      })
+      });
    })
 </script>
 </html>
+
+<!--
+
+Output:
+
+ID	E-mail	Nome	Avatar
+1	george.bluth@reqres.in	George	https://reqres.in/img/faces/1-image.jpg
+2	janet.weaver@reqres.in	Janet	https://reqres.in/img/faces/2-image.jpg
+3	emma.wong@reqres.in	Emma	https://reqres.in/img/faces/3-image.jpg
+4	eve.holt@reqres.in	Eve	https://reqres.in/img/faces/4-image.jpg
+5	charles.morris@reqres.in	Charles	https://reqres.in/img/faces/5-image.jpg
+6	tracey.ramos@reqres.in	Tracey	https://reqres.in/img/faces/6-image.jpg
+
+-->
