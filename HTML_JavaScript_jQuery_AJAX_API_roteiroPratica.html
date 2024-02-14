@@ -26,13 +26,16 @@ Siga o seguinte roteiro:
    $('#link').on('click',function(){
       $.ajax({      
          url: `https://reqres.in/api/users?page=1`,   
-         type: 'get'        
+         type: 'get',
+         beforeSend : function(){
+            $("#result").html("Carregando...");
+        }        
       })
-      .done(function(msg){ //usei a variável 'result' antes, mas deu problema ('undefined')
+      .done(function(msg){
 
          var table = '<table>';
 
-            table += '<tr><td>ID</td><td>E-mail</td><td>Nome</td><td>Avatar</td></tr>';
+            table += '<br /><tr><td>ID</td><td>E-mail</td><td>Nome</td><td>Avatar</td></tr><br />';
 
             $.map(msg.data,function(val,i){
 
