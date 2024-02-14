@@ -7,7 +7,6 @@
 </body>
 <script type="text/javascript">
    $('#link').on('click',function(){
-
       $.ajax({      
          url: `https://reqres.in/api/users?page=1`,   
          type: 'get'        
@@ -15,7 +14,6 @@
       .done(function(result){
          console.log(JSON.stringify(result)); 
          //$('#result').append();
-
       })
       .fail(function(xhr,txtStatus,msg){
          console.log('Ocorreu um erro: ' + msg);
