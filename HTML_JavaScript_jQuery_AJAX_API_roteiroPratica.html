@@ -34,13 +34,10 @@ Siga o seguinte roteiro:
       .done(function(msg){
 
          var table = '<table>';
-
             table += '<br /><tr><td>ID</td><td>E-mail</td><td>Nome</td><td>Avatar</td></tr><br />';
 
             $.map(msg.data,function(val,i){
-
                table += '<tr>'+'<td>'+val.id+'</td>'+'<td>'+val.email+'</td>'+'<td>'+val.first_name+'</td>'+'<td>'+val.avatar+'</td>'+'</tr>';
-
             });
 
             table += '</table>';
