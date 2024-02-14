@@ -1,0 +1,39 @@
+<!--
+
+Siga o seguinte roteiro:
+
+1. Crie a estrutura base de uma página HTML – doctype, html, head e body. Lembre-se de abrir e fechar corretamente cada tag.
+2. Importe/inclua, dentro da tag <head>, o framework jQuery.
+3. Utilizando alguns dos recursos jQuery que vimos – em especial a interface $.ajax, crie um link na página que, ao ser clicado, dispare uma função que:
+
+   3.1. Acesse a API https://reqres.in/api/users?page=1.
+   3.2. Colete os dados retornados pela API e os exiba em uma tabela HTML.
+
+4. Lembre-se de tratar os eventuais erros que podem acontecer ao longo do código implementado.
+5. Ao final, salve a página no editor e a abra no navegador para ver o resultado.
+
+-->
+
+<!doctype html>
+<html>
+<head><script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.js"></script></head>
+<body>
+<a href="javascript:void(0)" id="link">Clique</a>
+<div id="result"></div>
+</body>
+<script type="text/javascript">
+   $('#link').on('click',function(){
+      $.ajax({      
+         url: `https://reqres.in/api/users?page=1`,   
+         type: 'get'        
+      })
+      .done(function(result){
+         console.log(JSON.stringify(result)); 
+         //$('#result').append();
+      })
+      .fail(function(xhr,txtStatus,msg){
+         console.log('Ocorreu um erro: ' + msg);
+      })
+   })
+</script>
+</html>
