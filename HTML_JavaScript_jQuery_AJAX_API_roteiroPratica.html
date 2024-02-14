@@ -28,7 +28,7 @@ Siga o seguinte roteiro:
          url: `https://reqres.in/api/users?page=1`,   
          type: 'get'        
       })
-      .done(function(msg){
+      .done(function(msg){ //usei a variável 'result' antes, mas deu problema ('undefined')
 
          var table = '<table>';
 
