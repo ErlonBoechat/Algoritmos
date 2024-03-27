@@ -1,3 +1,13 @@
+/* 
+                          Text
+
+Componente utilizado para a apresentação de textos. Suporta aninhamento, 
+estilização e manuseio de toque. 
+
+O exemplo a seguir mostra a utilização aninhada de dois elementos Text. 
+Neste exemplo, o componente também é estilizado com o uso do StyleSheet.
+*/
+
 import React, {useState} from "react";
 import {Text, StyleSheet} from "react-native";
 
