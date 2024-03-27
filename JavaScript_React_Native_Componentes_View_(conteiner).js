@@ -16,7 +16,8 @@ const ViewExemplo = () => {
             padding: 20
          }}
       >
-         <View style={{backgroundColor:"red", flex:0.5}} />             <Text>Hello World</Text>
+         <View style={{backgroundColor:"red", flex:0.5}} />             
+         <Text>Hello World</Text>
       </View>   
 
    );
