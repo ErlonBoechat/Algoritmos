@@ -22,7 +22,7 @@ const TextoAninhado = () => {
    return (
    
       <Text style={styles.baseText}>
-         <Text style={styles.titulo} onPress={modificaTexto}>
+         <Text style={styles.titulo} onPress={modificaTexto}> // reage ao evento 'pressionar/tocar' elemento
             {titulo}
             {"\n"}
             {"\n"}
