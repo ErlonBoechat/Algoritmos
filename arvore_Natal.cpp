@@ -3,11 +3,13 @@ using namespace std;
 
 int main() {
     int i,j;
-    int tam=20;
+    int tam=0;
+    
+    cout<<"*";
     
     for(i=0;i<20;i++)
     {
-        tam--;
+        tam++;
         cout<<"\n";
         
         for(j=tam;j>0;j--)
@@ -16,6 +18,6 @@ int main() {
         cout<<"v";
         }
     }
-    cout<<"*";
+    cout<<"\n\nFELIZ NATAL!!!";
     return 0;
 }
